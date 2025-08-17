@@ -1,3 +1,108 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  padding-top: 212px;
+  padding-bottom: 474px;
+  padding-left: 422px;
+  background-position: center center;
+  .search {
+    margin-top: 40px;
+    &-icon {
+      top: 23px;
+      left: 12px;
+    }
+    &-input {
+      padding-left: 36px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &-slogan {
+    width: 58.35543%;
+    .banner-search {
+      width: 81.81818%;
+    }
+    .search-btn {
+      right: 168px;
+      top: 8px;
+    }
+  }
+}
+.black-filter {
+  height: 300px;
+  background: linear-gradient(rgb(33, 31, 30, 0), rgb(33, 31, 30, 30), #221f1e);
+  margin-top: -300px;
+}
+.recommend {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #221f1e;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.recommend {
+  .card-list {
+    li {
+      position: relative;
+      z-index: 1;
+      max-width: 416px;
+      width: 20.75617%;
+      height: 600px;
+      color: #fff;
+      background-size: cover;
+      background-position: center;
+      border-radius: 32px;
+      transition: all 0.5s;
+      padding: 32px;
+      &:hover {
+        width: 100%;
+        a {
+          opacity: 1;
+          padding: 32px;
+          margin-top: 16px;
+        }
+      }
+      &:nth-child(1) {
+        background-image: url(https://github.com/0404kai/2025-layout-img/blob/main/week8/product1.jpg?raw=true);
+      }
+      &:nth-child(2) {
+        background-image: url(https://github.com/0404kai/2025-layout-img/blob/main/week8/product2.jpg?raw=true);
+      }
+      &:nth-child(3) {
+        background-image: url(https://github.com/0404kai/2025-layout-img/blob/main/week8/product3.jpg?raw=true);
+      }
+      &:nth-child(4) {
+        background-image: url(https://github.com/0404kai/2025-layout-img/blob/main/week8/product4.jpg?raw=true);
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(#221f1e00 60%, #221f1e60);
+      }
+      a {
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        border-radius: 100px;
+        transition: all 0.5s;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.first-stop {
+  background-repeat: no-repeat;
+  .deco {
+    left: 80px;
+    top: 533px;
+  }
+}
+.mind-map {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

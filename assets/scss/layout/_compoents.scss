@@ -1,0 +1,18 @@
+.navbar {
+  .nav-left{
+    width: 48.45679%;
+  }
+  .search {
+    &-icon {
+      top: 10px;
+      left: 12px;
+    }
+    &-input {
+      padding-left: 36px;
+    }
+  }
+  .cart-icon{
+    width: 20px;
+    height: 20px;
+  }
+}
