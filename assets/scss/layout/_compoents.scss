@@ -22,7 +22,19 @@
   font-weight: 700;
   border-radius: 8px;
 }
+.tag-sm {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
 .tag-active {
   background: #4a3830;
   color: white;
+}
+.footer{
+  &-icon{
+    width: 18px;
+    object-fit: cover;
+    height: 16.5px;
+  }
 }

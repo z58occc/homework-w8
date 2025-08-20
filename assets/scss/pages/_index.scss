@@ -105,4 +105,91 @@
     left: 329px;
     top: -48px;
   }
+  .swiper {
+    overflow: visible;
+    overflow-x: clip;
+    margin-left: 312px;
+    .card-num {
+      color: #dfd2cd;
+      font-style: italic;
+      line-height: 1.2;
+      left: 20px;
+      top: -100px;
+      z-index: 100;
+      font-family: "Poppins", sans-serif;
+    }
+    .card-img {
+      width: 300px;
+      height: 412px;
+    }
+  }
 }
+.refer {
+  .deco-symbol {
+    left: -48px;
+    top: -48px;
+  }
+  .card-group {
+    margin-left: -12px;
+    margin-right: -12px;
+    .card-up {
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  &-button-left {
+    width: 56px;
+    top: 181px;
+    left: -80px;
+  }
+  &-button-right {
+    width: 56px;
+    top: 181px;
+    right: -80px;
+  }
+}
+.marquee {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  p {
+    color: #f3eeec;
+    font-size: 130px;
+    font-weight: bold;
+    white-space: nowrap;
+
+    animation-name: marquee;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    @keyframes marquee {
+      from {
+        transform: translateX(-25%);
+      }
+      to {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+.slogan {
+  padding: 32px;
+  padding-top: 302px;
+  background-position: center ;
+  background-size: cover;
+  border-radius: 32px;
+}
+
+.why{
+  .deco-middle{
+    top: 541px;
+  }
+  .deco-right-bottom{
+    bottom: 0;
+    right: 48px;
+  }
+ 
+}
+
