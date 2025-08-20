@@ -1,5 +1,5 @@
 .navbar {
-  .nav-left{
+  .nav-left {
     width: 48.45679%;
   }
   .search {
@@ -11,8 +11,18 @@
       padding-left: 36px;
     }
   }
-  .cart-icon{
+  .cart-icon {
     width: 20px;
     height: 20px;
   }
+}
+
+.tag {
+  padding: 8px 16px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.tag-active {
+  background: #4a3830;
+  color: white;
 }
