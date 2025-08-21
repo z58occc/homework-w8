@@ -1,0 +1,17 @@
+.main{
+  width: 856px;
+  .all-choose,input{
+    width: 24px;
+    height: 24px;
+  }
+  .card{
+    &-img{
+      width: 132px;
+      height: 132px;
+      object-fit: cover;
+    }
+  }
+}
+.aside{
+  width: 416px;
+}

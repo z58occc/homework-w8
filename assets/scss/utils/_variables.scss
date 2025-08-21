@@ -312,6 +312,7 @@ $dark:          $gray-900 !default;
 $neutral-80:       #4B4B4B !default;
 $neutral-60:       #909090 !default;
 $neutral-40:       #ECECEC !default;
+$neutral-15:       #F4F4F4 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -329,7 +330,8 @@ $theme-colors: (
   "dark":       $dark,
   "neutral-80":       $neutral-80,
   "neutral-60":       $neutral-60,
-  "neutral-40":       $neutral-40
+  "neutral-40":       $neutral-40,
+  "neutral-15":       $neutral-15
 
 ) !default;
 // scss-docs-end theme-colors-map
