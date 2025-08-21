@@ -132,11 +132,11 @@
       <section class="first-stop py-md-120 py-40 position-relative">
         <img class="deco-bg d-none d-md-block position-absolute z-n1" src="../assets/images/index/Deco_bg.png"
           alt="background-image">
-        <img class="deco position-absolute" src="../assets/images/index/Deco.png" alt="ZOBAA">
+        <img class="deco position-absolute d-none d-md-block" src="../assets/images/index/Deco.png" alt="ZOBAA">
         <div class="container d-flex flex-md-row flex-column-reverse">
           <div>
             <div class="d-md-flex mb-20 ">
-              <div class="card mb-4 mb-md-0 rounded-4 me-5 border-neutral-40">
+              <div class="card mb-4 mb-md-0 rounded-4 me-md-5  border-neutral-40">
                 <img class="card-img-top" src="../assets/images/index/Image-1.png" alt="glasses">
                 <div class="card-body p-5">
                   <h5 class="fs-7 fw-bold card-title">旅人攻略集合</h5>
@@ -153,7 +153,7 @@
               </div>
             </div>
             <div class="d-md-flex ">
-              <div class="card mb-4 mb-md-0 rounded-4 me-5 border-neutral-40 ms-md-80">
+              <div class="card mb-4 mb-md-0 rounded-4 me-md-5 border-neutral-40 ms-md-80">
                 <img class="card-img-top" src="../assets/images/index/Image-2.png" alt="glasses">
                 <div class="card-body p-5">
                   <h5 class="fs-7 fw-bold card-title">優惠機票、酒店</h5>
@@ -191,13 +191,13 @@
         </picture>
         <div class="py-md-120 py-40  bg-primary-10 ">
           <div class="container">
-            <div class="d-flex flex-md-row flex-column  justify-content-between mb-80 position-relative">
+            <div class="d-flex flex-md-row flex-column  justify-content-between mb-md-80 mb-0 position-relative">
               <img src="../assets/images/index/deco-lebal.png" alt="deco-lebal" class="deco-lebal position-absolute">
               <div>
-                <h2 class="fs-1 text-primary fw-bold mb-2">今年旅行的</h2>
-                <h2 class="fs-1 text-primary fw-bold mb-5">靈感地圖</h2>
+                <h2 class="fs-md-1 fs-4 text-primary fw-bold mb-2">今年旅行的</h2>
+                <h2 class="fs-md-1 fs-4 text-primary fw-bold mb-5">靈感地圖</h2>
 
-                <ul class="list-unstyled d-flex gap-2">
+                <ul class="list-unstyled d-flex gap-2 mb-5">
                   <li>
                     <button class="tag tag-active  border-0">全部</button>
                   </li>
@@ -219,39 +219,44 @@
                 </ul>
               </div>
               <div class="d-flex flex-column justify-content-center">
-                <p class="mb-0 text-primary fw-bold fs-7 text-center">來自旅人搜尋、收藏與討論最多的目的地排行榜，</p>
-                <p class="fw-bold  text-primary fs-7 text-center mb-5">一場風格與故事感兼具的靈感旅行，就從這裡開始。</p>
+                <p class="mb-0 text-primary fw-bold fs-md-7 fs-9 text-md-center text-start">來自旅人搜尋、收藏與討論最多的目的地排行榜，</p>
+                <p class="fw-bold  text-primary fs-md-7 fs-9 text-md-center text-start mb-md-5 mb-40">
+                  一場風格與故事感兼具的靈感旅行，就從這裡開始。</p>
                 <div class="d-flex gap-2 justify-content-end">
-                  <button class="p-4 bg-white border-0 rounded-4"><img src="../assets/images/index/ic_ArrowLeft.png"
-                      alt="ic-arrow-left"></button>
-                  <button class="p-4 bg-white border-0 rounded-4"><img src="../assets/images/index/ic-arrowRight.png"
-                      alt="ic-arrow-right"></button>
+                  <button class="p-4 bg-white border-0 rounded-4 d-none d-md-block"><img
+                      src="../assets/images/index/ic_ArrowLeft.png" alt="ic-arrow-left"></button>
+                  <button class="p-4 bg-white border-0 rounded-4  d-none d-md-block"><img
+                      src="../assets/images/index/ic-arrowRight.png" alt="ic-arrow-right"></button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper ps-3">
             <div class="swiper-wrapper">
               <div class="swiper-slide ">
                 <div class="card mb-3 border-0 rounded-4 position-relative">
-                  <span class="fs-200 card-num position-absolute">1</span>
-                  <div class="d-flex g-0">
-                    <div class=" p-4">
-                      <img src="../assets/images/index/map-1.jpg" class=" card-img rounded-4" alt="map-1">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/images/index/map-1.jpg">
+                        <img src="../assets/images/index/index-mb/mind-map.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
                     </div>
                     <div class="flex-fill ">
-                      <div class="card-body pe-32">
+                      <div class="card-body px-4 pb-4 pe-md-32">
                         <div class="d-flex gap-2 mb-2">
                           <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
                           <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
                         </div>
-                        <h5 class="card-title fs-2 fw-bold mb-2">走進四季交織的文化時光</h5>
-                        <p class="card-text text-primary mb-40">
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
                           穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
                         </p>
-                        <div class="d-flex mb-40">
-                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap">ZOBAA 建議</button>
-                          <p class="text-primary ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
                         </div>
                         <button
                           class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
@@ -266,24 +271,28 @@
               </div>
               <div class="swiper-slide ">
                 <div class="card mb-3 border-0 rounded-4 position-relative">
-                  <span class="fs-200 card-num position-absolute">2</span>
-                  <div class="d-flex g-0">
-                    <div class=" p-4">
-                      <img src="../assets/images/index/map-2.png" class=" card-img rounded-4" alt="map-1">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/images/index/map-1.jpg">
+                        <img src="../assets/images/index/index-mb/mind-map.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
                     </div>
                     <div class="flex-fill ">
-                      <div class="card-body pe-32">
+                      <div class="card-body px-4 pb-4 pe-md-32">
                         <div class="d-flex gap-2 mb-2">
                           <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
-                          <button class="tag text-primary bg-primary-10 border-0">南韓首爾</button>
+                          <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
                         </div>
-                        <h5 class="card-title fs-2 fw-bold mb-2">從街邊美食到韓劇場景</h5>
-                        <p class="card-text text-primary mb-40">
-                          白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
+                          穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
                         </p>
-                        <div class="d-flex mb-40">
-                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap">ZOBAA 建議</button>
-                          <p class="text-primary ">弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨</p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
                         </div>
                         <button
                           class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
@@ -298,24 +307,28 @@
               </div>
               <div class="swiper-slide ">
                 <div class="card mb-3 border-0 rounded-4 position-relative">
-                  <span class="fs-200 card-num position-absolute">3</span>
-                  <div class="d-flex g-0">
-                    <div class=" p-4">
-                      <img src="../assets/images/index/map-3.png" class=" card-img rounded-4" alt="map-1">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/images/index/map-1.jpg">
+                        <img src="../assets/images/index/index-mb/mind-map.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
                     </div>
                     <div class="flex-fill ">
-                      <div class="card-body pe-32">
+                      <div class="card-body px-4 pb-4 pe-md-32">
                         <div class="d-flex gap-2 mb-2">
                           <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
                           <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
                         </div>
-                        <h5 class="card-title fs-2 fw-bold mb-2">走進四季交織的文化時光</h5>
-                        <p class="card-text text-primary mb-40">
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
                           穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
                         </p>
-                        <div class="d-flex mb-40">
-                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap">ZOBAA 建議</button>
-                          <p class="text-primary ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
                         </div>
                         <button
                           class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
@@ -330,24 +343,28 @@
               </div>
               <div class="swiper-slide ">
                 <div class="card mb-3 border-0 rounded-4 position-relative">
-                  <span class="fs-200 card-num position-absolute">1</span>
-                  <div class="d-flex g-0">
-                    <div class=" p-4">
-                      <img src="../assets/images/index/map-1.jpg" class=" card-img rounded-4" alt="map-1">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/images/index/map-1.jpg">
+                        <img src="../assets/images/index/index-mb/mind-map.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
                     </div>
                     <div class="flex-fill ">
-                      <div class="card-body pe-32">
+                      <div class="card-body px-4 pb-4 pe-md-32">
                         <div class="d-flex gap-2 mb-2">
                           <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
                           <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
                         </div>
-                        <h5 class="card-title fs-2 fw-bold mb-2">走進四季交織的文化時光</h5>
-                        <p class="card-text text-primary mb-40">
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
                           穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
                         </p>
-                        <div class="d-flex mb-40">
-                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap">ZOBAA 建議</button>
-                          <p class="text-primary ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
                         </div>
                         <button
                           class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
@@ -362,24 +379,28 @@
               </div>
               <div class="swiper-slide ">
                 <div class="card mb-3 border-0 rounded-4 position-relative">
-                  <span class="fs-200 card-num position-absolute">1</span>
-                  <div class="d-flex g-0">
-                    <div class=" p-4">
-                      <img src="../assets/images/index/map-1.jpg" class=" card-img rounded-4" alt="map-1">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/images/index/map-1.jpg">
+                        <img src="../assets/images/index/index-mb/mind-map.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
                     </div>
                     <div class="flex-fill ">
-                      <div class="card-body pe-32">
+                      <div class="card-body px-4 pb-4 pe-md-32">
                         <div class="d-flex gap-2 mb-2">
                           <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
                           <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
                         </div>
-                        <h5 class="card-title fs-2 fw-bold mb-2">走進四季交織的文化時光</h5>
-                        <p class="card-text text-primary mb-40">
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
                           穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
                         </p>
-                        <div class="d-flex mb-40">
-                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap">ZOBAA 建議</button>
-                          <p class="text-primary ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
                         </div>
                         <button
                           class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
@@ -392,6 +413,7 @@
                   </div>
                 </div>
               </div>
+
 
 
             </div>
@@ -399,121 +421,133 @@
           </div>
 
         </div>
-        <img src="../assets/images/index/BG-bottom-Section.png" alt="bg-bottom-deco">
+        <picture>
+          <source srcset="../assets/images/index/BG-bottom-Section.png" media="(min-width: 768px)" />
+          <img src="../assets/images/index/index-mb/BG_Section-mb-down.png" alt="bg-up-deco">
+        </picture>
       </section>
 
-      <section class="refer py-120">
+      <section class="refer py-md-120 py-40">
         <div class="container position-relative">
           <img class="deco-symbol z-n1 position-absolute" src="../assets/images/index/deco-symbol.png" alt="deco-#">
-          <h2 class="fs-1 fw-bold lh-sm text-primary">搜尋墨爾本嗎？</h2>
-          <h2 class="fs-1 fw-bold lh-sm text-primary mb-80">來點行程參考！</h2>
+          <h2 class="fs-md-1 fs-4 fw-bold lh-sm text-primary">搜尋墨爾本嗎？</h2>
+          <h2 class="fs-md-1 fs-4 fw-bold lh-sm text-primary mb-md-80 mb-40">來點行程參考！</h2>
 
-          <div class="row card-group position-relative">
-            <button class="refer-button-left p-4 bg-white border-0 position-absolute rounded-4 shadow"><img
-                src="../assets/images/index/ic_ArrowLeft.png" alt="ic-arrow-left"></button>
-            <button class="refer-button-right position-absolute shadow p-4 bg-white border-0 rounded-4"><img
-                src="../assets/images/index/ic-arrowRight.png" alt="ic-arrow-right"></button>
-            <div class="card col border-0 position-relative">
-              <img src="../assets/images/index/refer-1.png" class="card-img-top" alt="forest train">
-              <div class="card-body">
-                <div class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
-                  <h5 class="card-title fw-bold fs-8 mb-3">
-                    【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
-                  </h5>
-                  <div class="d-flex mb-3">
-                    <button class="tag-sm text-primary bg-primary-10 border-0 me-2">即買即用</button>
-                    <button class="tag-sm text-primary bg-primary-10 border-0 me-2">5 天前可免費取消</button>
-                  </div>
-                  <div class="d-flex">
-                    <div class="border-end pe-3">
-                      <img class="d-inline" src="../assets/images/index/icon-star.png" alt="icon-star">
-                      <span class="fs-9 text-neutral-80">4.2</span>
-                      <span class="fs-9  text-neutral-60">(333)</span>
+
+          <div class="swiper mySwiper3 ">
+
+
+            <div class="swiper-wrapper position-relative">
+              <button class="refer-button-left p-4 bg-white border-0 position-absolute rounded-4 shadow"><img
+                  src="../assets/images/index/ic_ArrowLeft.png" alt="ic-arrow-left"></button>
+              <button class="refer-button-right position-absolute shadow p-4 bg-white border-0 rounded-4"><img
+                  src="../assets/images/index/ic-arrowRight.png" alt="ic-arrow-right"></button>
+              <div class="card swiper-slide border-0 position-relative">
+                <img src="../assets/images/index/refer-1.png" class="card-img-top" alt="forest train">
+                <div class="card-body">
+                  <div
+                    class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
+                    <h5 class="card-title fw-bold fs-8 mb-3">
+                      【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
+                    </h5>
+                    <div class="d-flex mb-3">
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">即買即用</button>
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">5 天前可免費取消</button>
                     </div>
-                    <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    <div class="d-flex">
+                      <div class="border-end pe-3">
+                        <img class="d-inline" src="../assets/images/index/icon-star.png" alt="icon-star">
+                        <span class="fs-9 text-neutral-80">4.2</span>
+                        <span class="fs-9  text-neutral-60">(333)</span>
+                      </div>
+                      <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    </div>
                   </div>
-                </div>
-                <div class="card-bottom">
-                  <h3 class="fw-bold fs-7 lh-sm">NT$ 4,220</h3>
-                  <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 5,220</h4>
+                  <div class="card-bottom">
+                    <h3 class="fw-bold fs-7 lh-sm">NT$ 4,220</h3>
+                    <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 5,220</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card col border-0 position-relative">
-              <img src="../assets/images/index/refer-2.png" class="card-img-top" alt="forest train">
-              <div class="card-body">
-                <div class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
-                  <h5 class="card-title fw-bold fs-8 mb-3">
-                    【無尾熊動物園＋企鵝歸巢雙享之旅
-                  </h5>
-                  <div class="d-flex mb-3">
-                    <button class="tag-sm text-primary bg-primary-10 border-0 me-2">即買即用</button>
-                    <button class="tag-sm text-primary bg-primary-10 border-0 me-2">7 天前可免費取消</button>
-                  </div>
-                  <div class="d-flex">
-                    <div class="border-end pe-3">
-                      <img class="d-inline" src="../assets/images/index/icon-star.png" alt="icon-star">
-                      <span class="fs-9 text-neutral-80">4.2</span>
-                      <span class="fs-9  text-neutral-60">(333)</span>
+              <div class="card swiper-slide border-0 position-relative">
+                <img src="../assets/images/index/refer-2.png" class="card-img-top" alt="forest train">
+                <div class="card-body">
+                  <div
+                    class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
+                    <h5 class="card-title fw-bold fs-8 mb-3">
+                      【無尾熊動物園＋企鵝歸巢雙享之旅
+                    </h5>
+                    <div class="d-flex mb-3">
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">即買即用</button>
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">7 天前可免費取消</button>
                     </div>
-                    <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    <div class="d-flex">
+                      <div class="border-end pe-3">
+                        <img class="d-inline" src="../assets/images/index/icon-star.png" alt="icon-star">
+                        <span class="fs-9 text-neutral-80">4.2</span>
+                        <span class="fs-9  text-neutral-60">(333)</span>
+                      </div>
+                      <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    </div>
                   </div>
-                </div>
-                <div class="card-bottom">
-                  <h3 class="fw-bold fs-7 lh-sm">NT$ 3,890</h3>
-                  <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 4,920</h4>
+                  <div class="card-bottom">
+                    <h3 class="fw-bold fs-7 lh-sm">NT$ 3,890</h3>
+                    <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 4,920</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card col border-0 position-relative">
-              <img src="../assets/images/index/refer-3.png" class="card-img-top" alt="forest train">
-              <div class="card-body">
-                <div class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
-                  <h5 class="card-title fw-bold fs-8 mb-3">
-                    大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線
-                  </h5>
-                  <div class="d-flex mb-3">
-                    <button class="tag-sm text-primary bg-primary-10 border-0 me-2">中文導覽</button>
-                    <button class="tag-sm text-primary bg-primary-10 border-0 me-2">5 天前可免費取消</button>
-                  </div>
-                  <div class="d-flex">
-                    <div class="border-end pe-3">
-                      <img class="d-inline" src="../assets/images/index/icon-star.png" alt="icon-star">
-                      <span class="fs-9 text-neutral-80">4.2</span>
-                      <span class="fs-9  text-neutral-60">(333)</span>
+              <div class="card swiper-slide border-0 position-relative">
+                <img src="../assets/images/index/refer-3.png" class="card-img-top" alt="forest train">
+                <div class="card-body">
+                  <div
+                    class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
+                    <h5 class="card-title fw-bold fs-8 mb-3">
+                      大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線
+                    </h5>
+                    <div class="d-flex mb-3">
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">中文導覽</button>
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">5 天前可免費取消</button>
                     </div>
-                    <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    <div class="d-flex">
+                      <div class="border-end pe-3">
+                        <img class="d-inline" src="../assets/images/index/icon-star.png" alt="icon-star">
+                        <span class="fs-9 text-neutral-80">4.2</span>
+                        <span class="fs-9  text-neutral-60">(333)</span>
+                      </div>
+                      <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    </div>
                   </div>
-                </div>
-                <div class="card-bottom">
-                  <h3 class="fw-bold fs-7 lh-sm">NT$ 3,690</h3>
-                  <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 4,500</h4>
+                  <div class="card-bottom">
+                    <h3 class="fw-bold fs-7 lh-sm">NT$ 3,690</h3>
+                    <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 4,500</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card col border-0 position-relative">
-              <img src="../assets/images/index/refer-4.png" class="card-img-top" alt="forest train">
-              <div class="card-body">
-                <div class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
-                  <h5 class="card-title fw-bold fs-8 mb-3">
-                    【墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照
-                  </h5>
-                  <div class="d-flex mb-3">
-                    <button class="tag-sm text-primary bg-primary-10 border-0 me-2">專業導覽</button>
-                    <button class="tag-sm text-primary bg-primary-10 border-0 me-2">3 天前可免費取消</button>
-                  </div>
-                  <div class="d-flex">
-                    <div class="border-end pe-3">
-                      <img class="d-inline" src="../assets/images/index/icon-star.png" alt="icon-star">
-                      <span class="fs-9 text-neutral-80">4.2</span>
-                      <span class="fs-9  text-neutral-60">(333)</span>
+              <div class="card swiper-slide border-0 position-relative">
+                <img src="../assets/images/index/refer-4.png" class="card-img-top" alt="forest train">
+                <div class="card-body">
+                  <div
+                    class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
+                    <h5 class="card-title fw-bold fs-8 mb-3">
+                      【墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照
+                    </h5>
+                    <div class="d-flex mb-3">
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">專業導覽</button>
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">3 天前可免費取消</button>
                     </div>
-                    <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    <div class="d-flex">
+                      <div class="border-end pe-3">
+                        <img class="d-inline" src="../assets/images/index/icon-star.png" alt="icon-star">
+                        <span class="fs-9 text-neutral-80">4.2</span>
+                        <span class="fs-9  text-neutral-60">(333)</span>
+                      </div>
+                      <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    </div>
                   </div>
-                </div>
-                <div class="card-bottom">
-                  <h3 class="fw-bold fs-7 lh-sm">NT$ 1,280</h3>
-                  <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 2,480</h4>
+                  <div class="card-bottom">
+                    <h3 class="fw-bold fs-7 lh-sm">NT$ 1,280</h3>
+                    <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 2,480</h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -527,44 +561,48 @@
         <p># ZOBAA # WHERETOGO # TODAY</p>
       </div>
 
-      <section class="why py-120 bg-primary-40 position-relative">
-        <img class="position-absolute top-0 start-0" src="../assets/images/index/deco-left-top.png"
+      <section class="why py-md-120 py-40 bg-primary-40 position-relative">
+        <img class="d-none d-md-block position-absolute top-0 start-0" src="../assets/images/index/deco-left-top.png"
           alt="one four circle">
-        <img class="deco-middle position-absolute " src="../assets/images/index/deco-bg-middle.png" alt="deco-middle">
-        <img class="deco-right-bottom position-absolute " src="../assets/images/index/deco-half-circle.png"
+        <img class="d-none d-md-block deco-middle position-absolute " src="../assets/images/index/deco-bg-middle.png" alt="deco-middle">
+        <img class="d-none d-md-block deco-right-bottom position-absolute " src="../assets/images/index/deco-half-circle.png"
           alt="deco-middle">
 
 
         <div class="container">
-          <div class="slogan mb-5 position-relative  z-0"
+          <div class="slogan mb-5 position-relative  z-0 d-none d-md-block"
             style="background-image: url(../assets/images/index/why-img.jpg);">
             <h2 class="fs-150 lh-sm fw-bold text-white opacity-32"># ZOBAAAAA !</h2>
             <h3 class="fs-1 lh-sm fw-bold text-white opacity-60">把旅行變成生活的養分。</h3>
           </div>
+          <div>
+            <img src="../assets/images/index/index-mb/why-img-mb.png" alt="why-img-mb" class="d-md-none">
+          </div>
+
           <div class="row bg-blur-8  p-32   rounded-4 position-relative z-0">
             <div class="bg-primary-10 position-absolute top-0 end-0 start-0 bottom-0 z-n1 opacity-50 rounded-4"></div>
             <div class="col p-0">
-              <h2 class="fs-2 fw-bold lh-sm text-primary mb-5">為什麼選擇 ZOBAA ?</h2>
-              <p class="mb-5 text-neutral-80">不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br>
+              <h2 class="fs-md-2 fs-6 fw-bold lh-sm text-primary mb-md-5 mb-4">為什麼選擇 ZOBAA ?</h2>
+              <p class="mb-5 text-neutral-80 fs-9 fs-md-8">不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br>
                 ZOBAA 希望你能放心探索世界，把記憶留給旅程本身。</p>
-              <button class="btn btn-dark d-flex py-18  rounded-100 align-items-center">
-                <span class="me-4 fs-7">立即探索我們的精心旅程</span>
+              <button class="btn btn-dark d-flex py-md-18 p-5  rounded-100 align-items-center">
+                <span class="me-4 fs-md-7 fs-9">立即探索我們的精心旅程</span>
                 <img src="../assets/images/index/card-icon.png" alt="right-arrow">
               </button>
             </div>
-            <div class="col-3 ps-32 me-4 d-flex flex-column justify-content-center bg-white rounded-4">
-              <h3 class="d-flex align-items-start fs-2 fw-bold lh-sm text-primary position-relative mb-2">8 年 <img
+            <div class="col-md-3 col-12 ps-32 me-4 d-flex flex-column justify-content-center bg-white rounded-4 p-5 p-md-0 mb-4 mb-md-0">
+              <h3 class="d-flex align-items-start fs-md-2 fs-4 fw-bold lh-sm text-primary position-relative mb-2">8 年 <img
                   src="../assets/images/index/+.png" alt="icon-plus" class="d-inline ms-2  "></h3>
 
-              <p class="fs-7 text-primary-80 lh-sm">旅遊企劃經驗</p>
+              <p class="fs-md-7 fs-8 text-primary-80 lh-sm">旅遊企劃經驗</p>
 
 
             </div>
-            <div class="col-3 ps-32 d-flex flex-column justify-content-center bg-white rounded-4">
-              <h3 class="d-flex align-items-start fs-2 fw-bold lh-sm text-primary position-relative mb-2">30,000<img
+            <div class="col-md-3 col-12 ps-32 d-flex flex-column justify-content-center bg-white rounded-4 p-5 p-md-0">
+              <h3 class="d-flex align-items-start  fw-bold lh-sm text-primary position-relative mb-2 fs-md-2 fs-4">30,000<img
                   src="../assets/images/index/+.png" alt="icon-plus" class="d-inline ms-2  "></h3>
 
-              <p class="fs-7 text-primary-80 lh-sm">旅人五星好評</p>
+              <p class="fs-md-7 fs-8 text-primary-80 lh-sm">旅人五星好評</p>
 
 
             </div>
@@ -584,7 +622,7 @@
             pagination: {
               el: '.swiper-pagination',
             },
-            slidesPerView: 5,
+            slidesPerView: 1.09935,
             spaceBetween: 16,
             // (手機板排版設定),
             breakpoints: {
@@ -602,6 +640,18 @@
             breakpoints: {
               768: {
                 slidesPerView: 5,
+                spaceBetween: 24,
+              }
+              // (RWD設定部分)
+            }
+          });
+          const swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 1.25270,
+            spaceBetween: 16,
+            // (手機板排版設定),
+            breakpoints: {
+              768: {
+                slidesPerView: 4,
                 spaceBetween: 24,
               }
               // (RWD設定部分)

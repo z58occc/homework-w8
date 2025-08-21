@@ -117,7 +117,6 @@
     }
     .card-img {
       width: 300px;
-      height: 412px;
     }
   }
 }
@@ -145,6 +144,9 @@
     width: 56px;
     top: 181px;
     right: -80px;
+  }
+  .swiper {
+    overflow: visible;
   }
 }
 .marquee {
@@ -199,17 +201,42 @@
     background-repeat: no-repeat;
     &-slogan {
       width: 100%;
-      .banner-search{
+      .banner-search {
         width: 100%;
       }
-      .search-btn{
+      .search-btn {
         right: 8px;
       }
     }
-    
   }
-  .black-filter{
+  .black-filter {
     height: 120px;
     margin-top: -120px;
+  }
+  .mind-map {
+    .deco-lebal {
+      top: -48px;
+      left: 133px;
+    }
+    .swiper {
+      margin-left: 0;
+      .card-num {
+        top: -40px;
+        left: 16px;
+      }
+      .card-img {
+        width: 100%;
+      }
+    }
+  }
+  .refer {
+    .swiper {
+      overflow: hidden;
+    }
+  }
+  .marquee {
+    p {
+      font-size: 32px;
+    }
   }
 }
