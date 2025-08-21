@@ -4,7 +4,6 @@
   padding-left: 422px;
   background-position: center center;
   .search {
-    margin-top: 40px;
     &-icon {
       top: 23px;
       left: 12px;
@@ -21,7 +20,7 @@
       width: 81.81818%;
     }
     .search-btn {
-      right: 168px;
+      right: 19.0909%;
       top: 8px;
     }
   }
@@ -32,8 +31,6 @@
   margin-top: -300px;
 }
 .recommend {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background: #221f1e;
 }
 .mb-80 {
@@ -177,19 +174,42 @@
 .slogan {
   padding: 32px;
   padding-top: 302px;
-  background-position: center ;
+  background-position: center;
   background-size: cover;
   border-radius: 32px;
 }
 
-.why{
-  .deco-middle{
+.why {
+  .deco-middle {
     top: 541px;
   }
-  .deco-right-bottom{
+  .deco-right-bottom {
     bottom: 0;
     right: 48px;
   }
- 
 }
 
+@media (max-width: 768px) {
+  .banner {
+    padding-top: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 162px;
+    // background-position: left 321px;
+    background-repeat: no-repeat;
+    &-slogan {
+      width: 100%;
+      .banner-search{
+        width: 100%;
+      }
+      .search-btn{
+        right: 8px;
+      }
+    }
+    
+  }
+  .black-filter{
+    height: 120px;
+    margin-top: -120px;
+  }
+}

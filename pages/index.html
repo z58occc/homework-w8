@@ -8,13 +8,15 @@
 
       <section class="banner " style="background-image: url(../assets/images/index/unsplash_eOWabmCNEdg.png);">
         <div class="banner-slogan">
-          <span class="lh-sm d-inline-block hint fs-7 fw-bold bg-primary-10 p-4 rounded-4">ZOBAA 旅行推薦平台</span>
-          <h1 class="mt-3 fs-1 fw-bold lh-sm text-primary">用旅行，收藏世界的樣子</h1>
-          <p class="text-primary-80 fw-bold mt-5 lh-sm fs-7">ZOBAA 整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。</p>
+          <span class="lh-sm d-inline-block hint fs-md-7 fs-8 fw-bold bg-primary-10 p-4 rounded-4">ZOBAA 旅行推薦平台</span>
+          <h1 class="mt-3 fs-md-1  fs-4 fw-bold lh-sm text-primary">用旅行，<br class="d-block d-md-none">
+            收藏世界的樣子</h1>
+          <p class="text-primary-80 fw-bold mt-md-5 mt-0  lh-sm fs-md-7 fs-9 mb-md-40 mb-5">ZOBAA
+            整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。</p>
           <div class="search d-flex position-relative">
             <div class=" position-relative w-100">
               <img src="../assets/images/index/Vector.png" class="search-icon position-absolute" alt="search-icon">
-              <input class="banner-search form-control me-2 py-10 rounded-4 search-input" type="search"
+              <input class="banner-search  form-control me-2 py-10 rounded-4 search-input" type="search"
                 placeholder="搜尋景點、地點或城市" aria-label="Search">
             </div>
             <button class="btn btn-sm btn-primary position-absolute search-btn rounded-4">開始探索旅程</button>
@@ -23,19 +25,67 @@
       </section>
       <div class="black-filter"></div>
 
-      <section class="recommend  ">
+      <section class="recommend  py-md-120 py-40">
         <div class="container">
-          <div class="d-flex justify-content-between mb-80">
-            <h2 class="fs-1 fw-bold text-white">你的<br>專屬推薦</h2>
-            <div class="text-white mt-34">
-              <p class="mb-0">來看我們的精選推薦行程，滿意度高達 99.2%</p>
-              <p class="mb-5">給自己一個難忘的旅遊行程吧！</p>
-              <p>查看全部行程 <img class="ms-2 d-inline align-baseline" src="../assets/images/index/right.png" alt="right">
+          <div class="d-md-flex justify-content-between mb-80">
+            <h2 class="fs-md-1 fs-4 mb-5 mb-md-0 fw-bold text-white">你的<br>專屬推薦</h2>
+            <div class="text-white mt-md-34 mt-0">
+              <p class="mb-0 fs-9 fs-md-8">來看我們的精選推薦行程，滿意度高達 99.2%</p>
+              <p class="mb-md-5 mb-3 fs-9 fs-md-8">給自己一個難忘的旅遊行程吧！</p>
+              <p class="fs-9 fs-md-8 d-flex align-items-center mb-40 mb-md-0">查看全部行程 <img class="ms-2 d-inline "
+                  src="../assets/images/index/right.png" alt="right">
               </p>
             </div>
           </div>
-          <ul class="card-list list-unstyled d-flex gap-5">
-            <li class="d-flex flex-column justify-content-end">
+          <div class="swiper mySwiper2 ">
+            <ul class="list-unstyled swiper-wrapper card-list  d-flex d-md-none gap-5 mb-40">
+              <li class="swiper-slide d-flex flex-column justify-content-end">
+                <h3 class="fw-bold fs-3 lh-sm mb-2">峇里島渡假漫遊</h3>
+                <p class="mb-0">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                  訂購行程
+                  <span class="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </a>
+              </li>
+              <li class=" swiper-slide d-flex flex-column justify-content-end">
+                <h3 class="fw-bold fs-3 lh-sm  mb-2">日本深度賞櫻計畫</h3>
+                <p class="mb-0">春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。</p>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                  訂購行程
+                  <span class="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </a>
+              </li>
+              <li class=" swiper-slide d-flex flex-column justify-content-end">
+                <h3 class="fw-bold fs-3 lh-sm mb-2">紐西蘭雪山探險</h3>
+                <p class="mb-0">探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。</p>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                  訂購行程
+                  <span class="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide d-flex flex-column justify-content-end">
+                <h3 class="fw-bold fs-3 lh-sm mb-2">摩洛哥迷幻之旅</h3>
+                <p class="mb-0">漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。</p>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                  訂購行程
+                  <span class="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="pagination">
+            </div>
+          </div>
+          <ul class="card-list list-unstyled  gap-5 d-none d-md-flex">
+            <li class=" d-flex flex-column justify-content-end">
               <h3 class="fw-bold fs-3 lh-sm mb-2">峇里島渡假漫遊</h3>
               <p class="mb-0">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
               <a href="#" class="d-flex justify-content-between align-items-center">
@@ -45,7 +95,7 @@
                 </span>
               </a>
             </li>
-            <li class="d-flex flex-column justify-content-end">
+            <li class=" d-flex flex-column justify-content-end">
               <h3 class="fw-bold fs-3 lh-sm  mb-2">日本深度賞櫻計畫</h3>
               <p class="mb-0">春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。</p>
               <a href="#" class="d-flex justify-content-between align-items-center">
@@ -55,7 +105,7 @@
                 </span>
               </a>
             </li>
-            <li class="d-flex flex-column justify-content-end">
+            <li class=" d-flex flex-column justify-content-end">
               <h3 class="fw-bold fs-3 lh-sm mb-2">紐西蘭雪山探險</h3>
               <p class="mb-0">探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。</p>
               <a href="#" class="d-flex justify-content-between align-items-center">
@@ -65,7 +115,7 @@
                 </span>
               </a>
             </li>
-            <li class="d-flex flex-column justify-content-end">
+            <li class=" d-flex flex-column justify-content-end">
               <h3 class="fw-bold fs-3 lh-sm mb-2">摩洛哥迷幻之旅</h3>
               <p class="mb-0">漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。</p>
               <a href="#" class="d-flex justify-content-between align-items-center">
@@ -76,18 +126,17 @@
               </a>
             </li>
           </ul>
-
         </div>
-
       </section>
 
-      <section class="first-stop py-120 position-relative">
-        <img class="deco-bg position-absolute z-n1" src="../assets/images/index/Deco_bg.png" alt="background-image">
+      <section class="first-stop py-md-120 py-40 position-relative">
+        <img class="deco-bg d-none d-md-block position-absolute z-n1" src="../assets/images/index/Deco_bg.png"
+          alt="background-image">
         <img class="deco position-absolute" src="../assets/images/index/Deco.png" alt="ZOBAA">
-        <div class="container d-flex">
+        <div class="container d-flex flex-md-row flex-column-reverse">
           <div>
-            <div class="d-flex mb-20">
-              <div class="card rounded-4 me-5 border-neutral-40">
+            <div class="d-md-flex mb-20 ">
+              <div class="card mb-4 mb-md-0 rounded-4 me-5 border-neutral-40">
                 <img class="card-img-top" src="../assets/images/index/Image-1.png" alt="glasses">
                 <div class="card-body p-5">
                   <h5 class="fs-7 fw-bold card-title">旅人攻略集合</h5>
@@ -95,7 +144,7 @@
                 </div>
               </div>
 
-              <div class="card rounded-4 border-neutral-40">
+              <div class="card mb-4 mb-md-0 rounded-4 border-neutral-40">
                 <img class="card-img-top" src="../assets/images/index/Image.png" alt="one woman take photo">
                 <div class="card-body p-5">
                   <h5 class="fs-7 fw-bold card-title">ZOBAA 專屬推薦行程</h5>
@@ -103,16 +152,15 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex ">
-              <div class="card rounded-4 me-5 border-neutral-40 ms-80">
+            <div class="d-md-flex ">
+              <div class="card mb-4 mb-md-0 rounded-4 me-5 border-neutral-40 ms-md-80">
                 <img class="card-img-top" src="../assets/images/index/Image-2.png" alt="glasses">
                 <div class="card-body p-5">
                   <h5 class="fs-7 fw-bold card-title">優惠機票、酒店</h5>
                   <p class="card-text text-black-80">即時比價，聰明出發不踩雷</p>
                 </div>
               </div>
-
-              <div class="card rounded-4 border-neutral-40">
+              <div class="card mb-4 mb-md-0 rounded-4 border-neutral-40">
                 <img class="card-img-top" src="../assets/images/index/Image-3.png" alt="one woman take photo">
                 <div class="card-body p-5">
                   <h5 class="fs-7 fw-bold card-title">銀行專屬優惠</h5>
@@ -121,10 +169,12 @@
               </div>
             </div>
           </div>
-          <div class="d-flex flex-column flex-fill justify-content-center align-items-end text-primary fw-bold lh-sm">
+          <div class="d-flex flex-column flex-fill justify-content-center align-items-md-end text-primary fw-bold lh-sm
+          
+          ">
             <div>
-              <h2 class="fs-1 mb-5">ZOBAA!<br>踏上旅程的<br>第一站</h2>
-              <p class="text-primary-60">
+              <h2 class="fs-md-1 fs-4 mb-5">ZOBAA!<br>踏上旅程的<br>第一站</h2>
+              <p class="text-primary-60 fs-9 fs-md-8 mb-40 mb-md-0">
                 探索最熱門的旅遊主題，<br>從旅人必備攻略到獨家優惠，<br>全都為你精挑細選。
               </p>
             </div>
@@ -135,10 +185,13 @@
       </section>
 
       <section class="mind-map">
-        <img src="../assets/images/index/BG-up-section.png" alt="bg-up-deco">
-        <div class="py-120 bg-primary-10 ">
+        <picture>
+          <source srcset="../assets/images/index/BG-up-section.png" media="(min-width: 768px)" />
+          <img src="../assets/images/index/index-mb/BG_Section-mb.png" alt="bg-up-deco">
+        </picture>
+        <div class="py-md-120 py-40  bg-primary-10 ">
           <div class="container">
-            <div class="d-flex justify-content-between mb-80 position-relative">
+            <div class="d-flex flex-md-row flex-column  justify-content-between mb-80 position-relative">
               <img src="../assets/images/index/deco-lebal.png" alt="deco-lebal" class="deco-lebal position-absolute">
               <div>
                 <h2 class="fs-1 text-primary fw-bold mb-2">今年旅行的</h2>
@@ -527,12 +580,28 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
           const swiper = new Swiper(".mySwiper", {
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
             slidesPerView: 5,
             spaceBetween: 16,
             // (手機板排版設定),
             breakpoints: {
               768: {
                 slidesPerView: 2.09115,
+                spaceBetween: 24,
+              }
+              // (RWD設定部分)
+            }
+          });
+          const swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 1.25270,
+            spaceBetween: 16,
+            // (手機板排版設定),
+            breakpoints: {
+              768: {
+                slidesPerView: 5,
                 spaceBetween: 24,
               }
               // (RWD設定部分)
