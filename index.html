@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/homework-w8/assets/main-DPRZALb8.js"></script>
+  <link rel="stylesheet" crossorigin href="/homework-w8/assets/main-C3eHzGMQ.css">
+</head>
+
+  <body >
+    <nav class="navbar navbar-light bg-light shadow-sm border border-bottom-light py-md-4  py-3">
+  <div class="container">
+    <div class="nav-left d-flex align-items-center ">
+      <a href="#" class="me-5 ">
+        <img src="data:image/png;base64,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" alt="brown-logo">
+      </a>
+      <div class="search position-relative w-100  d-none d-md-block">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEvSURBVHgBnVIBUcQwELxUQSUUB8UBKEDCFwUkCgAFDQpaHNQBlfASKiEOyi5c5/P9JDP9nbnJTnLZu9vESIS+75+MMe+gLaJGBMR5Xddv59woBZiNeO8HLF0h11trXe6wUpFeRQKqfyIecMlwRTjtzGqxdEcYp8M4g4o8Y4TzPgk5LXJ+QGvNmW86QsKJhJ2kRAju4/zrr/K/h8nRWuWTlDHq2uaEaq26SAHReZ0TopH0oZECovOQE9p86aSAqqpelCYtqGgyCUx84+tIupsWeR/km+l7GE0c9fWCCk/0hOOgkxP2rOhPB39M+Wmiqp5dSR5BxRb9S8vVaBvBgUXCK+gsF0O5TrzITiiCaPg5949j5AB4WX94s+/skFBJ7LBQTuwuoYTYfLdQJDbwkX4BGTuzFwTmXa4AAAAASUVORK5CYII=" class="search-icon position-absolute" alt="search-icon">
+        <input class="form-control me-2 py-10  search-input" type="search" placeholder="搜尋景點、地點或城市" aria-label="Search">
+      </div>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEvSURBVHgBnVIBUcQwELxUQSUUB8UBKEDCFwUkCgAFDQpaHNQBlfASKiEOyi5c5/P9JDP9nbnJTnLZu9vESIS+75+MMe+gLaJGBMR5Xddv59woBZiNeO8HLF0h11trXe6wUpFeRQKqfyIecMlwRTjtzGqxdEcYp8M4g4o8Y4TzPgk5LXJ+QGvNmW86QsKJhJ2kRAju4/zrr/K/h8nRWuWTlDHq2uaEaq26SAHReZ0TopH0oZECovOQE9p86aSAqqpelCYtqGgyCUx84+tIupsWeR/km+l7GE0c9fWCCk/0hOOgkxP2rOhPB39M+Wmiqp5dSR5BxRb9S8vVaBvBgUXCK+gsF0O5TrzITiiCaPg5949j5AB4WX94s+/skFBJ7LBQTuwuoYTYfLdQJDbwkX4BGTuzFwTmXa4AAAAASUVORK5CYII=" class="d-block d-md-none me-2" alt="search-icon">
+      <div class="position-relative">
+        <img class=" object-fit-cover cart-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFNSURBVHgB1VTRUYQwEN1khG9LwE74BmbECjgrUCuQ6+Ds4OzAD2D480qwBDrwvmEA3zrg4F0CEfjw3kwmO5vdZN/bJESXDtEbvu+3P04htkmSxLQCpMrZtu1DGIbXtALEqQNM3jG5tAxFmqY3bJwxYHloRQiVs2cBqe6zLNuTASCpU1UV5znDPGUPehaYn8kQZVlGvDnGx7Ao5QG4QQdMBSd4nrchg+pRTMx2Xdd3wzWpSwLNnkVEE4A0PdN9nueF0QG2bb9h8yNMNwgCVxfH1WPasI3qzy6IoBFg4x2/CTIA4l6g/eOp/2oi6ZYMAKYHy7Ji1Zr2gK65Dg0ezRzIkaq+G9c0zRMtgLYH0P8TEv35PwLbX3tqGXSVF/TfoZUI/1GEPvA15bcQg/rrnDitRBzc9cDB2M2NG7tFwwYf58ZNNpm/Cynldmnc5eIL2SWSZhKonAcAAAAASUVORK5CYII=" alt="cart-icon">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-block d-md-none">
+          2
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </div>
+      <button class="btn btn-primary rounded-4 d-none d-md-block " type="button">登入 / 註冊</button>
+      <button class="navbar-toggler border-0 d-block d-md-none p-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header ">
+    <h5 class="offcanvas-title pt-6 mt-4 d-flex align-items-center border-bottom pb-4 w-100" id="offcanvasNavbarLabel ">
+      <img class="me-2 w-100 avada" src="data:image/png;base64,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" alt="person">
+      <div>
+        <h5 class="fs-8 mb-0">Jessica</h5>
+        <p class="fs-8 mb-0">jessica.yen@gamil.com</p>
+      </div>
+    </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body pt-0 p-5">
+    <div class="d-flex  flex-column justify-content-between h-100">
+      <ul class="navbar-nav  flex-grow-1 pe-3">
+        <li class="nav-item d-flex align-items-center py-4 ">
+          <img class="me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgB7VU9DoIwFH5tGRz1BjDhETwCgYUjeAN1Y8PVyXgDPQQJo+dggSOwE4JfTUxIQfsWY4J8SfPaft9r3k/SRzTDAjF2GYZhKqXcd123JM4jQtTQXrMsO5icMi+iKDrDIcF2QXxo7cb3fVEUxb1POCPRbBENtW3r5XleEQNBELhKqRJ+OxyPfU6a4ldZuI8b2kFJJX0Zjk2AnpQw7hu6QmO9T/6/z8AWoQ1zD6z43x5U3Mwm2AP9t2sbx7FLTPS0tcmNZXDBSpumKVF/4gDap8VPfDO5wcDRAwODY4VM1sQcOjprrBPKmdDk8ADNwljYAU6YhAAAAABJRU5ErkJggg==" alt="ic order">
+          <p class="mb-0 fs-9">訂單管理</p>
+        </li>
+        <li class="nav-item d-flex align-items-center py-4 ">
+          <img class="me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBpVTJccJAENwVx1shyBlABvDjeogIgAzsCDAZmAjAESBXAcXPZGCFsCHwBh3uNruqtRD3VA070va05kQKS3zfd6MoqiVJ4jmOo8rlchgEwe4ejDRGp9MZA/CapqmbXUq5g+PHer2enMNQ8PxuMFIDZ3AeapKQCpAHbWifUJ81jdlCVQ4zX61WIwmyIS5JyLD7y+Vya77carW8Uqn0DdPTrxRwIxvT6/VIuGDU0JEDwIAXSO3NBlI2m42K47jJj1Fp5zF8BtFERz5wcPILolqtBqJASIom1FH8F9pFmEqlMjclkd1uN6WF/KV4QgwPI1Q0dC0eEss3ZA2/aKEOY/GgwHeQEeLH1K7Rbrd9cadwSnBQBZo2cdglRDnlCwztDJvg3UpGLHzHOsopm5Y1AkX9EcfBVehaE+ukrpEdDgczoyGaWv8LygBIIo4bQeCCO3uBzCVGk3FW++bu36jkNqMwUh3ZwmTDYbfn82T2LpHm0jwhKyS0SLMoSLrf7100wKQZMs2izTm7HVadGlDuMjtJ0i3WsJ//n7xKaATdn+Mwg/uJbg7Fs8LVunU1fwFgugoLe6MpoAAAAABJRU5ErkJggg==" alt="ic order">
+          <p class="mb-0 fs-9">我的收藏</p>
+        </li>
+        <li class="nav-item d-flex align-items-center py-4 ">
+          <img class="me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJWSURBVHgBfVTbceJAEJSWR/EpR3AiA5yB/cer6uQMTASgCIAIDkcAF8Hpqnj9QQjOwMrgdL883b2eUS0qrKkSu+zO9HTP7K7vlVi3220ZY3bX6zVw1y+XS7zZbGbfxRmvxHzfHxYBbZAxw7K4G9AoigJ8oc4xPHEO4MfVauXzg2VYCvv9/pP6UdENGQcwPB6PH8IwEzACpwBrqh/AJlgf0wdlyDBaEm5JcqYAHOucYAp4Pp+fXRbVapWBv7lPQCWAkoxF3RdT0H/F5lxBGo0GHYMkSVLvG2u32yH8PPr0er2dlGoGVbEFxSJlh8g+WK/XCzdYErIxrFsKnwV8psUElUrlQ1Q+GqEcyv6PAuBYFGgjKHcizHIjY6d0oQF9So1tLRDgdNUCiG/MzpMF2VJqp9OJFAj92AngG5qV2EYhYAaAN87RReuM2rYk0Z77nEP2Owbrh8b85CgkQibD/sjuaTYEX11JAA0ku3fPsP5f4vRypLpnJNsQDEeytuBPvV5P5LhQ6shhpbeJrD00aK8lQa3nNhEbhZr8k6zT5XI50YxwItivIkuWBH75+S28EbE2KhXJmRvMWvKYAeRdwHiDprgAL64fVGX6RmDc+yoLf9jBrFar8UoGh8MhkMbcNTmKgRx+yn5l6UBk4DtS9Va4liLJs3uzCHY6neYgESl7ZQmlze12m+bdx8LAqVmmrxHq/cfNwjeCgLKfKiDLQkDOc1AuMBPlowkPqFtTAlt6IZSsjC98veD/wEvhNtj3SgxgbNS9B/nmOSxa6csP07N6Y0j0tyzoE15LWjqXkjUCAAAAAElFTkSuQmCC" alt="ic order">
+          <p class="mb-0 fs-9">帳號設定</p>
+        </li>
+      </ul>
+      <div class="d-flex mt-auto ">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAYAAAC0EpUuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADPSURBVHgB1ZSNCYMwEIUv4gCO0BG6UekEmgmqEyTZwG7UERzBCZLegwsE8SfBFtoPxEOPx/PeReWcu4UQLBE1lMeklOrbtn1uNVQs2BcIgouY2KRGE4qu6xRlYK0NRyYq+gK/KcpBP3Clz2oqJJ29MeYqQUOceCMGOutUa/1i0TtqiEfHq04l4WJE+PNBee/VqtPcnQVyIkfUfB94JP0ppxLUmAqiLhbFvOPMJaghFQTFK7UkFYv8zzHF5898NYW7Oe29xP9UHzUtmBHMXsMbFLNvvhEwSVcAAAAASUVORK5CYII=" alt="log-out">
+        <p class="mb-0 fs-9">登出</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <section class="banner " style="background-image: url(/homework-w8/assets/unsplash_eOWabmCNEdg-CImlmca0.png);">
+        <div class="banner-slogan">
+          <span class="lh-sm d-inline-block hint fs-md-7 fs-8 fw-bold bg-primary-10 p-4 rounded-4">ZOBAA 旅行推薦平台</span>
+          <h1 class="mt-3 fs-md-1  fs-4 fw-bold lh-sm text-primary">用旅行，<br class="d-block d-md-none">
+            收藏世界的樣子</h1>
+          <p class="text-primary-80 fw-bold mt-md-5 mt-0  lh-sm fs-md-7 fs-9 mb-md-40 mb-5">ZOBAA
+            整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。</p>
+          <div class="search d-flex position-relative">
+            <div class=" position-relative w-100">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEvSURBVHgBnVIBUcQwELxUQSUUB8UBKEDCFwUkCgAFDQpaHNQBlfASKiEOyi5c5/P9JDP9nbnJTnLZu9vESIS+75+MMe+gLaJGBMR5Xddv59woBZiNeO8HLF0h11trXe6wUpFeRQKqfyIecMlwRTjtzGqxdEcYp8M4g4o8Y4TzPgk5LXJ+QGvNmW86QsKJhJ2kRAju4/zrr/K/h8nRWuWTlDHq2uaEaq26SAHReZ0TopH0oZECovOQE9p86aSAqqpelCYtqGgyCUx84+tIupsWeR/km+l7GE0c9fWCCk/0hOOgkxP2rOhPB39M+Wmiqp5dSR5BxRb9S8vVaBvBgUXCK+gsF0O5TrzITiiCaPg5949j5AB4WX94s+/skFBJ7LBQTuwuoYTYfLdQJDbwkX4BGTuzFwTmXa4AAAAASUVORK5CYII=" class="search-icon position-absolute" alt="search-icon">
+              <input class="banner-search  form-control me-2 py-10 rounded-4 search-input" type="search"
+                placeholder="搜尋景點、地點或城市" aria-label="Search">
+            </div>
+            <button class="btn btn-sm btn-primary position-absolute search-btn rounded-4">開始探索旅程</button>
+          </div>
+        </div>
+      </section>
+      <div class="black-filter"></div>
+
+      <section class="recommend  py-md-120 py-40">
+        <div class="container">
+          <div class="d-md-flex justify-content-between mb-80">
+            <h2 class="fs-md-1 fs-4 mb-5 mb-md-0 fw-bold text-white">你的<br>專屬推薦</h2>
+            <div class="text-white mt-md-34 mt-0">
+              <p class="mb-0 fs-9 fs-md-8">來看我們的精選推薦行程，滿意度高達 99.2%</p>
+              <p class="mb-md-5 mb-3 fs-9 fs-md-8">給自己一個難忘的旅遊行程吧！</p>
+              <p class="fs-9 fs-md-8 d-flex align-items-center mb-40 mb-md-0">查看全部行程 <img class="ms-2 d-inline "
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7Y+xDQAgCARfJ3Ij3UQ2R6ikkoClXmJiwV0AOMDMUx8yiNh4k46MH/EjRX/IQxV3lNC0LNvNCRRxX5VbWjYR8uQFBpnD4CYuCaQAAAAASUVORK5CYII=" alt="right">
+              </p>
+            </div>
+          </div>
+          <div class="swiper mySwiper2   ">
+            <ul class="list-unstyled swiper-wrapper card-list  d-flex d-md-none gap-5 mb-40">
+              <li class="swiper-slide d-flex flex-column justify-content-end p-4">
+                <h3 class="fw-bold fs-md-3 fs-5 lh-sm mb-2">峇里島渡假漫遊</h3>
+                <p class="mb-0 fs-9 fs-md-8">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                  訂購行程
+                  <span class="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide d-flex flex-column justify-content-end p-4">
+                <h3 class="fw-bold fs-md-3 fs-5 lh-sm mb-2">峇里島渡假漫遊</h3>
+                <p class="mb-0 fs-9 fs-md-8">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                  訂購行程
+                  <span class="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </a>
+              </li>
+              <li class=" swiper-slide d-flex flex-column justify-content-end">
+                <h3 class="fw-bold fs-3 lh-sm mb-2">紐西蘭雪山探險</h3>
+                <p class="mb-0">探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。</p>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                  訂購行程
+                  <span class="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide d-flex flex-column justify-content-end">
+                <h3 class="fw-bold fs-3 lh-sm mb-2">摩洛哥迷幻之旅</h3>
+                <p class="mb-0">漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。</p>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                  訂購行程
+                  <span class="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="card-list-hover list-unstyled  gap-5 d-none d-md-flex">
+            <li class=" d-flex flex-column justify-content-end">
+              <h3 class="fw-bold fs-3 lh-sm mb-2">峇里島渡假漫遊</h3>
+              <p class="mb-0">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <a href="#" class="d-flex justify-content-between align-items-center">
+                訂購行程
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </a>
+            </li>
+            <li class=" d-flex flex-column justify-content-end">
+              <h3 class="fw-bold fs-3 lh-sm  mb-2">日本深度賞櫻計畫</h3>
+              <p class="mb-0">春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。</p>
+              <a href="#" class="d-flex justify-content-between align-items-center">
+                訂購行程
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </a>
+            </li>
+            <li class=" d-flex flex-column justify-content-end">
+              <h3 class="fw-bold fs-3 lh-sm mb-2">紐西蘭雪山探險</h3>
+              <p class="mb-0">探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。</p>
+              <a href="#" class="d-flex justify-content-between align-items-center">
+                訂購行程
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </a>
+            </li>
+            <li class=" d-flex flex-column justify-content-end">
+              <h3 class="fw-bold fs-3 lh-sm mb-2">摩洛哥迷幻之旅</h3>
+              <p class="mb-0">漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。</p>
+              <a href="#" class="d-flex justify-content-between align-items-center">
+                訂購行程
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="first-stop py-md-120 py-40 position-relative">
+        <img class="deco-bg w-100 d-none d-md-block position-absolute z-n1" src="/homework-w8/assets/Deco_bg-T-t7gOFJ.png"
+          alt="background-image">
+        <img class="deco position-absolute d-none d-md-block" src="/homework-w8/assets/Deco-BjskYuVo.png" alt="ZOBAA">
+        <div class="container d-flex flex-md-row flex-column-reverse">
+          <div>
+            <div class="d-md-flex mb-20 ">
+              <div class="card mb-4 mb-md-0 rounded-4 me-md-5  border-neutral-40">
+                <img class="card-img-top" src="/homework-w8/assets/Image-1-BRBI07e3.png" alt="glasses">
+                <div class="card-body p-5">
+                  <h5 class="fs-7 fw-bold card-title">旅人攻略集合</h5>
+                  <p class="card-text text-black-80">景點、交通、私房景點一次掌握</p>
+                </div>
+              </div>
+
+              <div class="card mb-4 mb-md-0 rounded-4 border-neutral-40">
+                <img class="card-img-top" src="/homework-w8/assets/Image-SDZ6xSfy.png" alt="one woman take photo">
+                <div class="card-body p-5">
+                  <h5 class="fs-7 fw-bold card-title">ZOBAA 專屬推薦行程</h5>
+                  <p class="card-text text-black-80">嚴選深度行程，豐富旅行靈感</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-md-flex ">
+              <div class="card mb-4 mb-md-0 rounded-4 me-md-5 border-neutral-40 ms-md-80">
+                <img class="card-img-top" src="/homework-w8/assets/Image-2-CIhGBpZn.png" alt="glasses">
+                <div class="card-body p-5">
+                  <h5 class="fs-7 fw-bold card-title">優惠機票、酒店</h5>
+                  <p class="card-text text-black-80">即時比價，聰明出發不踩雷</p>
+                </div>
+              </div>
+              <div class="card mb-4 mb-md-0 rounded-4 border-neutral-40">
+                <img class="card-img-top" src="/homework-w8/assets/Image-3-BrRqOy4M.png" alt="one woman take photo">
+                <div class="card-body p-5">
+                  <h5 class="fs-7 fw-bold card-title">銀行專屬優惠</h5>
+                  <p class="card-text text-black-80">使用指定卡別享受獨家旅遊好康</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-fill justify-content-center align-items-md-end text-primary fw-bold lh-sm
+          
+          ">
+            <div>
+              <h2 class="fs-md-1 fs-4 mb-5">ZOBAA!<br>踏上旅程的<br>第一站</h2>
+              <p class="text-primary-60 fs-9 fs-md-8 mb-40 mb-md-0">
+                探索最熱門的旅遊主題，<br>從旅人必備攻略到獨家優惠，<br>全都為你精挑細選。
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+      <section class="mind-map">
+        <picture class="w-100">
+          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAABQCAYAAAD4O2hnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQGSURBVHgB7dkxTmNBEEXR/qPZB+x/YyQIAgIShJEAIZyQuLvafnVO9qSqFdxjAAAAAAAAADDV6/PD/e/9Nv6f7dM4zvbxfjrf47g7uz/G3//j6/8YAAAAAAAAAGF2BdjdBGAAAAAAAABguq4BdjcBGAAAAAAAAAIJsD0JwAAAAAAAALCAAMsOAjAAAAAAAACRBFg6EoABAAAAAABYQoCFegIwAAAAAABAKAEW+hGAAQAAAAAAFhFggWoCMAAAAAAAEEuABboRgAEAAAAAgGUEWIBaAjAAAAAAAAQTYAF6EYABAAAAAGAhARaASgIwAAAAAADRBFgAOhGAAQAAAABYSoAFgDoCMAAAAABAOAEWAPoQgAEAAAAAFhNgAYAqAjAAAAAAEE+ABQC6EIABAAAAgOUEWACAGgIwAAAAADQgwAIA9CAAAwAAAEABARYAgAoCMAAAAAAtCLAAAHQgAAMAAABQQoAFAID1BGAAAACAJgRYAADIJwADAAAAFBFgAQCA1QRgAAAAoA0BFgAASCcAAwAAAGUEWAAAgLUEYAAAAGhEgAUAAMgmAAMAAEAhARYAAICVBGAAAABaEWABAABIJgADAABQSoAFAACAdQRgAACAZgRYAAAAyCUAAwAAFBNgAQAAgFUEYAAAoB0BFgAAAEglAAMAAOUEWAAAAIA1BGAAAGhIgAUAAADIJAADAMAGAiwAAAAAKwjAAAC0JMACAAAAkEgABgBgCwEWAAAAAOYTgAEAmhJgAQAAACCPAAwAsIkACwAAAADMJgADAG0JsAAAAABAGgEYANhGgAUAAAAAmEsABoDGBFgAAAAAgCwCMABsJMACAAAAADCTAAxAawIsAAAAAABJBGAAthJgAQAAAABgHgEYoDkBFgAAAAAAcgjAAJsJsAAAAAAAwCwCMNCeAAsAAAAAAKQQgIHtBFgAAAAAAIA5BGBAgAUAAAAAAAghAMMVEGABAAAAAACYQQCGIcACAAAAAACQQQDmKgiwAAAAAAAAcDkBmE8CLAAAAAAAANw+AfhKCLAAAAAAAADApQTgbwIsAAAAAAAAcOuuJgALsAAAAAAAAACX+QnAAiwAAAAAAADAbTtenh5PAwAAAAAAAICb928AAAAAAAAAEEEABgAAAAAAAAghAAMAAAAAAACEEIABAAAAAAAAQgjAAAAAAAAAACEEYAAAAAAAAIAQAjAAAAAAAABACAEYAAAAAAAAIIQADAAAAAAAABBCAAYAAAAAAAAIIQADAAAAAAAAhBCAAQAAAAAAAEIIwAAAAAAAAAAhBGAAAAAAAACAEAIwAAAAAAAAQAgBGAAAAAAAACCEAAwAAAAAAAAQQgAGAAAAAAAACCEAAwAAAAAAAIT4ALoujB7IF2LzAAAAAElFTkSuQmCC" media="(min-width: 375px)" />
+          <img class="w-100" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAAoCAYAAAAFb7poAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFySURBVHgB7dbNToNAGIbRb2pdO3cg939jLrsxsQvbEWtMq/GvtcAwnJMQGGD95E0BQPWeNg/d6/051l2JdHhO+9KliLv+KZcUub/33yKntwuAMZXNJm9jm3dxk/ex6vpXuexTXsW+j3K6P/yT4hjxKF2cSdwB/uncVd2nO8fAxB3gxBiregziDjStxlU9BnEHZqOVVT0GcQcms9RVPQZxB67Cqq6LuANfsqrnTdxhAazq5RF3mCGrmt+IO0zMqmYI4g5XZlVTA3GHH1jVzJW4syhWNUsh7syWVQ3fE3eqYVXD9Yg7g7CqYVrizp9Y1TAv4r5AVjW0T9wbYFUDn4l7Zaxq4BrEfWBWNTAFcT+DVQ3MxaLjblUDrWom7lY1wFG1cbeqAS43StytaoBxXRR3qxqgbsmqBmjP+rHsNhG3h8P7jE+pHE7l5MePJwBqtgoAmiPuAA0Sd4AGiTtAg8QdoEHiDtAgcQdokLgDNEjcARr0AvtgdwP9wnOIAAAAAElFTkSuQmCC" alt="bg-up-deco">
+        </picture>
+        <div class="py-md-120 py-40  bg-primary-10 ">
+          <div class="container">
+            <div class="d-flex flex-md-row flex-column  justify-content-between mb-md-80 mb-0 position-relative">
+              <img src="/homework-w8/assets/deco-lebal-BfKRGFG4.png" alt="deco-lebal" class="deco-lebal position-absolute">
+              <div>
+                <h2 class="fs-md-1 fs-4 text-primary fw-bold mb-2">今年旅行的</h2>
+                <h2 class="fs-md-1 fs-4 text-primary fw-bold mb-5">靈感地圖</h2>
+
+                <ul class="list-unstyled d-flex gap-2 mb-5 text-nowrap overflow-auto">
+                  <li>
+                    <button class="tag tag-active  border-0">全部</button>
+                  </li>
+                  <li>
+                    <button class="tag text-primary bg-white border-0">亞洲</button>
+                  </li>
+                  <li>
+                    <button class="tag text-primary bg-white border-0">歐洲</button>
+                  </li>
+                  <li>
+                    <button class="tag text-primary bg-white border-0">美洲</button>
+                  </li>
+                  <li>
+                    <button class="tag text-primary bg-white border-0">大洋洲</button>
+                  </li>
+                  <li>
+                    <button class="tag text-primary bg-white border-0">非洲</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex flex-column justify-content-center">
+                <p class="mb-0 text-primary fw-bold fs-md-7 fs-9 text-md-center text-start">來自旅人搜尋、收藏與討論最多的目的地排行榜，</p>
+                <p class="fw-bold  text-primary fs-md-7 fs-9 text-md-center text-start mb-md-5 mb-40">
+                  一場風格與故事感兼具的靈感旅行，就從這裡開始。</p>
+                <div class="d-flex gap-2 justify-content-end">
+                  <button class="p-4 bg-white border-0 rounded-4 d-none d-md-block"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgB7ZChDsIwEIZv7UtULLihwSHRKB4BnmR7FHBYBNNgYPLQMyQg+hi0ZGajW6/sEEv2J03T9u772gKMGVRWi1lqR0hPRC2swNlnIWCeXxEpfYJSVIMDbKlwG+8LvuAF7iAg0T/hnQIOeKuAC+4UNODBMZepMQVF2idtX5SZKa0KNqcC9/BjpGuzfOlzEisrX5qxnsbqYfbuwCXglMiuQw6J9BX0lXgFLkkyUcfyqTWllyRoSC75DQ8wZjB5A7InXh3YCtFQAAAAAElFTkSuQmCC" alt="ic-arrow-left"></button>
+                  <button class="p-4 bg-white border-0 rounded-4  d-none d-md-block"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACqSURBVHgBpZMxDoMwDEWd9hIdunb3Ugl16kyX3qBHKdyEkROws7HBiMSEQCiXQGAjRmIH+FKkRMl7sRQHQEgY4J+HdObq2vi+EMcJUpq+H/cbNL3NdwnqzloCW3ZJEqeAQ0ClSUSBj0QVaBIvgSQx9EwTHE90gXMxZs/pT4A/KjdZl3FWVJG3YAteSjgDewkkWBVosCgIn4jUJaUEc5yN1AzLZ+ILchfMmQFKb2PaJgwejwAAAABJRU5ErkJggg==" alt="ic-arrow-right"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper mySwiper  ps-3 ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ">
+                <div class="card mb-3 border-0 rounded-4 position-relative">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="/homework-w8/assets/map-1-DxQ7aEOJ.jpg">
+                        <img src="/homework-w8/assets/mind-map-Bz426OEQ.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
+                    </div>
+                    <div class="flex-fill ">
+                      <div class="card-body px-4 pb-4 pe-md-32">
+                        <div class="d-flex gap-2 mb-2">
+                          <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
+                          <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
+                        </div>
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
+                          穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                        </p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        </div>
+                        <button
+                          class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
+                          <span>立即探索魅力古都</span>
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFsSURBVHgBxZeNbYMwEIXPmYAR6ASlE7QjdAQ2ASYIG5gRukIncDeADcgG1zuwE0dCwj6b8ElPCPHzng/jHwWBIGJBh2/SJ6kilaTCXr6RJtIf6Zf0o5S6QQ7IuCRdSTPGoflZkMIttsapXG31ols9Yj5GDK0G3VhhXnM/RPXqlm+FKH1P5ZnzdzKw9u4jmUgf7i+5eBeaF5iD9WjcyVIBW5YRIum6bjk2TQMC3qgKE9gAGiMxxiA/ymrbFgX0zrxAIVrrlBA8sBUcoMYEEkPUovJnDKE5gMEMCEMYDhA7yeQMMcPeHe6FEoWEuMCBrPn3b8r2CYZhuLeeBqeQR+ZsnVBgziydcMBEhOaMTh6IEsyZ2g3Fon6QaM4UriP2GIk/GQnNNXsnTcf0nz8dI3lMx9IqJNA739OXZE/gCYvSrRDnLcsPrMSIsds0XMeHHB2T3xG3NduoRuxwPVvjcu/9CgLBx/b8i/QOmbbn/xzJsoscS2YSAAAAAElFTkSuQmCC" alt="right-arrow">
+                        </button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div class="card mb-3 border-0 rounded-4 position-relative">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">2</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="/homework-w8/assets/map-2-CCKLbiMw.png">
+                        <img src="/homework-w8/assets/mind-map-Bz426OEQ.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
+                    </div>
+                    <div class="flex-fill ">
+                      <div class="card-body px-4 pb-4 pe-md-32">
+                        <div class="d-flex gap-2 mb-2">
+                          <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
+                          <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
+                        </div>
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
+                          穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                        </p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        </div>
+                        <button
+                          class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
+                          <span>立即探索魅力古都</span>
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFsSURBVHgBxZeNbYMwEIXPmYAR6ASlE7QjdAQ2ASYIG5gRukIncDeADcgG1zuwE0dCwj6b8ElPCPHzng/jHwWBIGJBh2/SJ6kilaTCXr6RJtIf6Zf0o5S6QQ7IuCRdSTPGoflZkMIttsapXG31ols9Yj5GDK0G3VhhXnM/RPXqlm+FKH1P5ZnzdzKw9u4jmUgf7i+5eBeaF5iD9WjcyVIBW5YRIum6bjk2TQMC3qgKE9gAGiMxxiA/ymrbFgX0zrxAIVrrlBA8sBUcoMYEEkPUovJnDKE5gMEMCEMYDhA7yeQMMcPeHe6FEoWEuMCBrPn3b8r2CYZhuLeeBqeQR+ZsnVBgziydcMBEhOaMTh6IEsyZ2g3Fon6QaM4UriP2GIk/GQnNNXsnTcf0nz8dI3lMx9IqJNA739OXZE/gCYvSrRDnLcsPrMSIsds0XMeHHB2T3xG3NduoRuxwPVvjcu/9CgLBx/b8i/QOmbbn/xzJsoscS2YSAAAAAElFTkSuQmCC" alt="right-arrow">
+                        </button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div class="card mb-3 border-0 rounded-4 position-relative">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">3</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="/homework-w8/assets/map-1-DxQ7aEOJ.jpg">
+                        <img src="/homework-w8/assets/mind-map-Bz426OEQ.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
+                    </div>
+                    <div class="flex-fill ">
+                      <div class="card-body px-4 pb-4 pe-md-32">
+                        <div class="d-flex gap-2 mb-2">
+                          <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
+                          <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
+                        </div>
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
+                          穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                        </p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        </div>
+                        <button
+                          class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
+                          <span>立即探索魅力古都</span>
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFsSURBVHgBxZeNbYMwEIXPmYAR6ASlE7QjdAQ2ASYIG5gRukIncDeADcgG1zuwE0dCwj6b8ElPCPHzng/jHwWBIGJBh2/SJ6kilaTCXr6RJtIf6Zf0o5S6QQ7IuCRdSTPGoflZkMIttsapXG31ols9Yj5GDK0G3VhhXnM/RPXqlm+FKH1P5ZnzdzKw9u4jmUgf7i+5eBeaF5iD9WjcyVIBW5YRIum6bjk2TQMC3qgKE9gAGiMxxiA/ymrbFgX0zrxAIVrrlBA8sBUcoMYEEkPUovJnDKE5gMEMCEMYDhA7yeQMMcPeHe6FEoWEuMCBrPn3b8r2CYZhuLeeBqeQR+ZsnVBgziydcMBEhOaMTh6IEsyZ2g3Fon6QaM4UriP2GIk/GQnNNXsnTcf0nz8dI3lMx9IqJNA739OXZE/gCYvSrRDnLcsPrMSIsds0XMeHHB2T3xG3NduoRuxwPVvjcu/9CgLBx/b8i/QOmbbn/xzJsoscS2YSAAAAAElFTkSuQmCC" alt="right-arrow">
+                        </button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div class="card mb-3 border-0 rounded-4 position-relative">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="/homework-w8/assets/map-1-DxQ7aEOJ.jpg">
+                        <img src="/homework-w8/assets/mind-map-Bz426OEQ.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
+                    </div>
+                    <div class="flex-fill ">
+                      <div class="card-body px-4 pb-4 pe-md-32">
+                        <div class="d-flex gap-2 mb-2">
+                          <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
+                          <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
+                        </div>
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
+                          穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                        </p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        </div>
+                        <button
+                          class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
+                          <span>立即探索魅力古都</span>
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFsSURBVHgBxZeNbYMwEIXPmYAR6ASlE7QjdAQ2ASYIG5gRukIncDeADcgG1zuwE0dCwj6b8ElPCPHzng/jHwWBIGJBh2/SJ6kilaTCXr6RJtIf6Zf0o5S6QQ7IuCRdSTPGoflZkMIttsapXG31ols9Yj5GDK0G3VhhXnM/RPXqlm+FKH1P5ZnzdzKw9u4jmUgf7i+5eBeaF5iD9WjcyVIBW5YRIum6bjk2TQMC3qgKE9gAGiMxxiA/ymrbFgX0zrxAIVrrlBA8sBUcoMYEEkPUovJnDKE5gMEMCEMYDhA7yeQMMcPeHe6FEoWEuMCBrPn3b8r2CYZhuLeeBqeQR+ZsnVBgziydcMBEhOaMTh6IEsyZ2g3Fon6QaM4UriP2GIk/GQnNNXsnTcf0nz8dI3lMx9IqJNA739OXZE/gCYvSrRDnLcsPrMSIsds0XMeHHB2T3xG3NduoRuxwPVvjcu/9CgLBx/b8i/QOmbbn/xzJsoscS2YSAAAAAElFTkSuQmCC" alt="right-arrow">
+                        </button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div class="card mb-3 border-0 rounded-4 position-relative">
+                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <div class="d-flex flex-column flex-md-row g-0">
+                    <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="/homework-w8/assets/map-1-DxQ7aEOJ.jpg">
+                        <img src="/homework-w8/assets/mind-map-Bz426OEQ.png" class=" card-img rounded-4" alt="map-1">
+                      </picture>
+                    </div>
+                    <div class="flex-fill ">
+                      <div class="card-body px-4 pb-4 pe-md-32">
+                        <div class="d-flex gap-2 mb-2">
+                          <button class="tag text-primary bg-primary-10 border-0">亞洲</button>
+                          <button class="tag text-primary bg-primary-10 border-0">日本京都</button>
+                        </div>
+                        <h5 class="card-title fs-md-2 fs-4 fw-bold mb-2">走進四季交織的文化時光</h5>
+                        <p class="card-text text-primary mb-md-40 mb-5 fs-9 fs-md-8">
+                          穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                        </p>
+                        <div class="d-md-flex  d-block mb-md-40 mb-5">
+                          <button class="tag text-primary bg-primary-10 border-0 me-3 text-nowrap mb-2 mb-md-0">ZOBAA
+                            建議</button>
+                          <p class="text-primary fs-9 fs-md-8 ">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                        </div>
+                        <button
+                          class="btn btn-dark d-flex justify-content-between w-100 rounded-100 align-items-center">
+                          <span>立即探索魅力古都</span>
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFsSURBVHgBxZeNbYMwEIXPmYAR6ASlE7QjdAQ2ASYIG5gRukIncDeADcgG1zuwE0dCwj6b8ElPCPHzng/jHwWBIGJBh2/SJ6kilaTCXr6RJtIf6Zf0o5S6QQ7IuCRdSTPGoflZkMIttsapXG31ols9Yj5GDK0G3VhhXnM/RPXqlm+FKH1P5ZnzdzKw9u4jmUgf7i+5eBeaF5iD9WjcyVIBW5YRIum6bjk2TQMC3qgKE9gAGiMxxiA/ymrbFgX0zrxAIVrrlBA8sBUcoMYEEkPUovJnDKE5gMEMCEMYDhA7yeQMMcPeHe6FEoWEuMCBrPn3b8r2CYZhuLeeBqeQR+ZsnVBgziydcMBEhOaMTh6IEsyZ2g3Fon6QaM4UriP2GIk/GQnNNXsnTcf0nz8dI3lMx9IqJNA739OXZE/gCYvSrRDnLcsPrMSIsds0XMeHHB2T3xG3NduoRuxwPVvjcu/9CgLBx/b8i/QOmbbn/xzJsoscS2YSAAAAAElFTkSuQmCC" alt="right-arrow">
+                        </button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+        <picture class="w-100">
+          <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAABQCAYAAAD4O2hnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQGSURBVHgB7dktTgRBFIXRGjIGiWT/Gxs8wWBJmgQIoQ1m6qf7vnPcrdRbwXd5f3vdGgAAAAAAAACn99AAAAAAAAAAiCAAAwAAAAAAAIQQgAEAAAAAAABCCMAAAAAAAAAAIQRgAAAAAAAAgBACMAAAAAAAAEAIARgAAAAAAAAghAAMAAAAAAAAEEIABgAAAAAAAAghAAMAAAAAAACEEIABAAAAAAAAQgjAAAAAAAAAACEEYAAAAAAAAIAQAjAAAAAAAABACAEYAAAAAAAAIIQADAAAAAAAABBCAAYAAAAAAAAIIQADAAAAAAAAhBCAAQAAAAAAAEJcGwAAAAAAAABdbe1y+7svbdvvrd32/7eX3X74//7aPnb78en59v0OAAAAAAAAEGZVgF1NAAYAAAAAAAC6qxpgVxOAAQAAAAAAIJAAW5MADAAAAAAAAAMIsKwgAAMAAAAAABBJgKUiARgAAAAAAIAhBFiYTwAGAAAAAAAIJcBCPQIwAAAAAADAIAIsMJsADAAAAAAAxBJggWoEYAAAAAAAYBgBFmAuARgAAAAAAIIJsAC1CMAAAAAAADCQAAvATAIwAAAAAADRBFgAKhGAAQAAAAAYSoAFgHkEYAAAAACAcAIsANQhAAMAAAAADCbAAgCzCMAAAAAAQDwBFgCoQgAGAAAAAIYTYAEA5hCAAQAAAKAAARYAoAYBGAAAAAAmEGABAJhBAAYAAACgBAEWAIAKBGAAAAAAphBgAQBgPAEYAAAAoAgBFgAA8gnAAAAAAJMIsAAAwGgCMAAAAFCGAAsAAKQTgAEAAIBpBFgAAICxBGAAAAAoRIAFAADIJgADAADARAIsAAAAIwnAAAAAlCLAAgAAkEwABgAAYCoBFgAAAMYRgAEAAIoRYAEAACCXAAwAADCZAAsAAACMIgADAADlCLAAAABAKgEYAACYToAFAAAAGEMABgCAggRYAAAAgEwCMAAALCDAAgAAADCCAAwAQEkCLAAAAACJBGAAAJYQYAEAAACgPwEYAKAoARYAAAAA8gjAAACLCLAAAAAAQG8CMABQlgALAAAAAKQRgAGAZQRYAAAAAIC+BGAAKEyABQAAAADIIgADwEICLAAAAAAAPQnAAJQmwAIAAAAAkEQABmApARYAAAAAAPoRgAGKE2ABAAAAACCHAAywmAALAAAAAAD0IgAD5QmwAAAAAABACgEYWE6ABQAAAAAA6EMABgRYAAAAAACAEAIwHIAACwAAAAAAQA8CMDQBFgAAAAAAgAwCMIcgwAIAAAAAAMD9BGC+CLAAAAAAAABwfgLwQQiwAAAAAAA0ALiTAPxDgAUAAAAAAADO7jABWIAFAAAAAAAAuM9vABZgAQAAAAAAAM7tE47mlUFxnLhlAAAAAElFTkSuQmCC" media="(min-width: 375px)" />
+          <img class="w-100" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAAoCAYAAAAFb7poAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFhSURBVHgB7dY7TsQwFIZRJ0wBZUr2v7HQIxREQwETAiOEQLxmJg/7+hwpiu0FfPqbh7vbMQEQSpsACEfcAQISd4CAxB0gIHEHCEjcAQISd4CAxB0gIHEHCGiXAMjemJr+9d+ksW/G1B/expt92w7T2zBdhzbt+4v0PDymy0HcAVbXDOMU42b60iHW031///befkR8l57ezlfddZ+OJO4AZzp2VXddN6SFiTvAJ8uv6jWIOxBajqt6DeIOFCTGql6DuAObqXVVr0HcgZlY1TkRd+BbVnXZxB2qYFXXRtyhQFY1fxF32JxVzfzEHWZmVZMDcYdfWdWUSdypilVNLcSdglnV8BNxJxtWNcxH3FmIVQ1bEnf+xaqGsoh7laxqiE7cA7Cqga/EPTtWNXA+cV+YVQ1sQdyPYlUDZag67lY1EFWguFvVAO+yjbtVDXC6leJuVQOs6aS4W9UAedtZ1QDxvAC7E0NrAi8drgAAAABJRU5ErkJggg==" alt="bg-up-deco">
+        </picture>
+      </section>
+
+      <section class="refer py-md-120 py-40">
+        <div class="container position-relative">
+          <picture class="deco-symbol z-n1 position-absolute">
+            <source srcset="data:image/png;base64,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" media="(min-width: 768px)" />
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMYSURBVHgB1ZpfctMwEMZ3XT+EGTqT8G+GN3MCygkoN8gVuAmcgKP0Cr4BcALCEw8NOBBm6EBsIeHSOra0u7a2rfJ76Uy0Uf1Fm0+rjRAU2H5bV/bPPDSO2Ly4v3jyAfh5zuyfZTDAmLfHDx+/AYIMIqmqygmZUzESMS1YUKMmQ3aeaEE57E6ocQQUinEYcq4MmhUwRAvCBsiHaKD5DAJ+VtUJFyNZ6WhBBrCgxtGAaIWaui7IeYQrHS3I/qfn1LAk7/9Ng0ZlpeMFATDfIbMBCYjkByNd6ShBEofbQX5rDueIEiRxuMViIVshBYdr4yLgHM4I003L4RxRgjiHswEfQTTPjkzbMXtZnCmwDgclSKZR2sscORfwq/pShMZ2hn6QrIY59f7refAlOY+BT6F5ZjDbYOd7itRELreNqd9DyvQKVjLluN07Bfp2Tgridu8U6Ns5bQrM7p0CfTtnXA4LSJuy/wIjKO2Usxv39/5rQUGS3fuusXZeDl4LBR+Gww0rcIQJ/Fivl5jBGRFSHj949AoYXLWem7qiYuw8o55xUumDCKdkgLCG0+1HtEyr5Zgazh7qViCZRrGG+8/E4hTJ6tiX2944wIIal55Su4wW1J5SaTsXn1KV+hFdRgvi8t6ykZ9SlfoRHUYLMjWdbhbRp6rbj7hmtCC2YFV0uBErfcV4U+DaTUoOZyakm2OCy2FBjWo5nHSl+wx24UM8pXYZrBDXgUkBys4HgrjcTgGq6ThcIaQ7MClANR19ppB0ynEFq09Q0inHFax7gi5PqWmvEFOw7gk6dIdz7LWCXe00w4tnvsDfTb7MEN9BmDLHP6+BoYajuTEZuc+5awBHUHsrhQvb+qXeuyfosnbyvmH79Zw+A9kOzL3F0xUwbKvzUyZkI78GMERe+jA1nK8D40OrWg8+hzwUC2pUWsNp9SNCjBBklH4c1ulHhBAJ0vzJUKsfEUIkSOtShGo/IoBIkNalCOV+hBfZd0jpUsRNO5xDaApYUKNa119iHc4hFKRzKUKrH0E/C4OywxXUaKzDOVhBWg7XcrMO5/gL/LdF909SdaIAAAAASUVORK5CYII=" alt="deco-#">
+          </picture>
+          <h2 class="fs-md-1 fs-4 fw-bold lh-sm text-primary">搜尋墨爾本嗎？</h2>
+          <h2 class="fs-md-1 fs-4 fw-bold lh-sm text-primary mb-md-80 mb-40">來點行程參考！</h2>
+
+
+          <div class="swiper mySwiper3 ">
+            <div class="swiper-wrapper position-relative">
+              <button class="refer-button-left p-4 bg-white border-0 position-absolute rounded-4 shadow"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVHgB7ZChDsIwEIZv7UtULLihwSHRKB4BnmR7FHBYBNNgYPLQMyQg+hi0ZGajW6/sEEv2J03T9u772gKMGVRWi1lqR0hPRC2swNlnIWCeXxEpfYJSVIMDbKlwG+8LvuAF7iAg0T/hnQIOeKuAC+4UNODBMZepMQVF2idtX5SZKa0KNqcC9/BjpGuzfOlzEisrX5qxnsbqYfbuwCXglMiuQw6J9BX0lXgFLkkyUcfyqTWllyRoSC75DQ8wZjB5A7InXh3YCtFQAAAAAElFTkSuQmCC" alt="ic-arrow-left"></button>
+              <button class="refer-button-right position-absolute shadow p-4 bg-white border-0 rounded-4"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACqSURBVHgBpZMxDoMwDEWd9hIdunb3Ugl16kyX3qBHKdyEkROws7HBiMSEQCiXQGAjRmIH+FKkRMl7sRQHQEgY4J+HdObq2vi+EMcJUpq+H/cbNL3NdwnqzloCW3ZJEqeAQ0ClSUSBj0QVaBIvgSQx9EwTHE90gXMxZs/pT4A/KjdZl3FWVJG3YAteSjgDewkkWBVosCgIn4jUJaUEc5yN1AzLZ+ILchfMmQFKb2PaJgwejwAAAABJRU5ErkJggg==" alt="ic-arrow-right"></button>
+              <div class="card swiper-slide border-0 position-relative">
+                <img src="/homework-w8/assets/refer-1-BFM-Y-Eg.png" class="card-img-top" alt="forest train">
+                <div class="card-body">
+                  <div
+                    class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
+                    <h5 class="card-title fw-bold fs-8 mb-3">
+                      【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
+                    </h5>
+                    <div class="d-flex mb-3">
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">即買即用</button>
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">5 天前可免費取消</button>
+                    </div>
+                    <div class="d-flex">
+                      <div class="border-end pe-3">
+                        <img class="d-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgBhVLLDcIwDLWD+JRTR0hvHLNCYBDEBLASk4QReoB7N2gPlKKm2CQVLYgG+pRYjv2e7CcFIAA2KvY31BOh4h2a/Y3qQ6iH34XKKMlkjUvjSEwT1GkxMqHZuiC9IDQFr0YpQdaRWAKiAm7JnzukwJy5JCMxPWLuzM3YGmRQ8A8MaTQpdethVNSRdVb0pr1oTjYP0ItIlIkn/zA9QNyeF3rBApr3OognF7PuacHKgeBBrDwRCfVyfdbLzSUhgJ0X1iSG3tjI4FfwqMxKdvkTmFhV6ap5uAYAAAAASUVORK5CYII=" alt="icon-star">
+                        <span class="fs-9 text-neutral-80">4.2</span>
+                        <span class="fs-9  text-neutral-60">(333)</span>
+                      </div>
+                      <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <h3 class="fw-bold fs-7 lh-sm">NT$ 4,220</h3>
+                    <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 5,220</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide border-0 position-relative">
+                <img src="/homework-w8/assets/refer-2-jNl8FEK9.png" class="card-img-top" alt="forest train">
+                <div class="card-body">
+                  <div
+                    class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
+                    <h5 class="card-title fw-bold fs-8 mb-3">
+                      【無尾熊動物園＋企鵝歸巢雙享之旅
+                    </h5>
+                    <div class="d-flex mb-3">
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">即買即用</button>
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">7 天前可免費取消</button>
+                    </div>
+                    <div class="d-flex">
+                      <div class="border-end pe-3">
+                        <img class="d-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgBhVLLDcIwDLWD+JRTR0hvHLNCYBDEBLASk4QReoB7N2gPlKKm2CQVLYgG+pRYjv2e7CcFIAA2KvY31BOh4h2a/Y3qQ6iH34XKKMlkjUvjSEwT1GkxMqHZuiC9IDQFr0YpQdaRWAKiAm7JnzukwJy5JCMxPWLuzM3YGmRQ8A8MaTQpdethVNSRdVb0pr1oTjYP0ItIlIkn/zA9QNyeF3rBApr3OognF7PuacHKgeBBrDwRCfVyfdbLzSUhgJ0X1iSG3tjI4FfwqMxKdvkTmFhV6ap5uAYAAAAASUVORK5CYII=" alt="icon-star">
+                        <span class="fs-9 text-neutral-80">4.2</span>
+                        <span class="fs-9  text-neutral-60">(333)</span>
+                      </div>
+                      <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <h3 class="fw-bold fs-7 lh-sm">NT$ 3,890</h3>
+                    <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 4,920</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide border-0 position-relative">
+                <img src="/homework-w8/assets/refer-3-Bcz01YeE.png" class="card-img-top" alt="forest train">
+                <div class="card-body">
+                  <div
+                    class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
+                    <h5 class="card-title fw-bold fs-8 mb-3">
+                      大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線
+                    </h5>
+                    <div class="d-flex mb-3">
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">中文導覽</button>
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">5 天前可免費取消</button>
+                    </div>
+                    <div class="d-flex">
+                      <div class="border-end pe-3">
+                        <img class="d-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgBhVLLDcIwDLWD+JRTR0hvHLNCYBDEBLASk4QReoB7N2gPlKKm2CQVLYgG+pRYjv2e7CcFIAA2KvY31BOh4h2a/Y3qQ6iH34XKKMlkjUvjSEwT1GkxMqHZuiC9IDQFr0YpQdaRWAKiAm7JnzukwJy5JCMxPWLuzM3YGmRQ8A8MaTQpdethVNSRdVb0pr1oTjYP0ItIlIkn/zA9QNyeF3rBApr3OognF7PuacHKgeBBrDwRCfVyfdbLzSUhgJ0X1iSG3tjI4FfwqMxKdvkTmFhV6ap5uAYAAAAASUVORK5CYII=" alt="icon-star">
+                        <span class="fs-9 text-neutral-80">4.2</span>
+                        <span class="fs-9  text-neutral-60">(333)</span>
+                      </div>
+                      <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <h3 class="fw-bold fs-7 lh-sm">NT$ 3,690</h3>
+                    <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 4,500</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide border-0 position-relative">
+                <img src="/homework-w8/assets/refer-4-DfvMZSSs.png" class="card-img-top" alt="forest train">
+                <div class="card-body">
+                  <div
+                    class="card-up border-bottom border-neutral-40 border-top-0 border-end-0 border-start-0 pb-4 mb-4">
+                    <h5 class="card-title fw-bold fs-8 mb-3">
+                      【墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照
+                    </h5>
+                    <div class="d-flex mb-3">
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">專業導覽</button>
+                      <button class="tag-sm text-primary bg-primary-10 border-0 me-2">3 天前可免費取消</button>
+                    </div>
+                    <div class="d-flex">
+                      <div class="border-end pe-3">
+                        <img class="d-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgBhVLLDcIwDLWD+JRTR0hvHLNCYBDEBLASk4QReoB7N2gPlKKm2CQVLYgG+pRYjv2e7CcFIAA2KvY31BOh4h2a/Y3qQ6iH34XKKMlkjUvjSEwT1GkxMqHZuiC9IDQFr0YpQdaRWAKiAm7JnzukwJy5JCMxPWLuzM3YGmRQ8A8MaTQpdethVNSRdVb0pr1oTjYP0ItIlIkn/zA9QNyeF3rBApr3OognF7PuacHKgeBBrDwRCfVyfdbLzSUhgJ0X1iSG3tjI4FfwqMxKdvkTmFhV6ap5uAYAAAAASUVORK5CYII=" alt="icon-star">
+                        <span class="fs-9 text-neutral-80">4.2</span>
+                        <span class="fs-9  text-neutral-60">(333)</span>
+                      </div>
+                      <p class="ps-3 text-neutral-80 mb-0">500+ 個已訂購</p>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <h3 class="fw-bold fs-7 lh-sm">NT$ 1,280</h3>
+                    <h4 class="fs-9 text-secondary  text-decoration-line-through">NT$ 2,480</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class="marquee d-flex">
+        <p class="w-100"># ZOBAA # WHERETOGO # TODAY</p>
+      </div>
+
+      <section class="why py-md-120 py-40 bg-primary-40 position-relative">
+        <img class="d-none d-md-block position-absolute top-0 start-0" src="/homework-w8/assets/deco-left-top-BFIXGf10.png"
+          alt="one four circle">
+        <img class="d-none d-md-block deco-middle w-100 position-absolute " src="/homework-w8/assets/deco-bg-middle-H7aPP9Q_.png"
+          alt="deco-middle">
+        <img class="d-none d-md-block deco-right-bottom position-absolute "
+          src="/homework-w8/assets/deco-half-circle-CGfq937V.png" alt="deco-middle">
+
+
+        <div class="container">
+          <div class="slogan mb-5 position-relative  z-0 d-none d-md-block"
+            style="background-image: url(/homework-w8/assets/why-img-Cb2_oL29.jpg);">
+            <h2 class="overflow-hidden fs-150 lh-sm fw-bold text-white opacity-32"># ZOBAAAAA !</h2>
+            <h3 class="fs-1 lh-sm fw-bold text-white opacity-60">把旅行變成生活的養分。</h3>
+          </div>
+          <div>
+            <img src="/homework-w8/assets/why-img-mb-B3JS62l5.png" alt="why-img-mb" class="d-md-none w-100">
+          </div>
+
+          <div class="row bg-blur-8  p-32   rounded-4 position-relative z-0">
+            <div class="bg-primary-10 position-absolute top-0 end-0 start-0 bottom-0 z-n1 opacity-50 rounded-4"></div>
+            <div class="col p-0">
+              <h2 class="fs-md-2 fs-6 fw-bold lh-sm text-primary mb-md-5 mb-4">為什麼選擇 ZOBAA ?</h2>
+              <p class="mb-5 text-neutral-80 fs-9 fs-md-8">不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br>
+                ZOBAA 希望你能放心探索世界，把記憶留給旅程本身。</p>
+              <button class="btn btn-dark d-md-flex d-none py-md-18 p-5  rounded-100 align-items-center">
+                <span class="me-4 fs-md-7 fs-9">立即探索我們的精心旅程</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFsSURBVHgBxZeNbYMwEIXPmYAR6ASlE7QjdAQ2ASYIG5gRukIncDeADcgG1zuwE0dCwj6b8ElPCPHzng/jHwWBIGJBh2/SJ6kilaTCXr6RJtIf6Zf0o5S6QQ7IuCRdSTPGoflZkMIttsapXG31ols9Yj5GDK0G3VhhXnM/RPXqlm+FKH1P5ZnzdzKw9u4jmUgf7i+5eBeaF5iD9WjcyVIBW5YRIum6bjk2TQMC3qgKE9gAGiMxxiA/ymrbFgX0zrxAIVrrlBA8sBUcoMYEEkPUovJnDKE5gMEMCEMYDhA7yeQMMcPeHe6FEoWEuMCBrPn3b8r2CYZhuLeeBqeQR+ZsnVBgziydcMBEhOaMTh6IEsyZ2g3Fon6QaM4UriP2GIk/GQnNNXsnTcf0nz8dI3lMx9IqJNA739OXZE/gCYvSrRDnLcsPrMSIsds0XMeHHB2T3xG3NduoRuxwPVvjcu/9CgLBx/b8i/QOmbbn/xzJsoscS2YSAAAAAElFTkSuQmCC" alt="right-arrow">
+              </button>
+            </div>
+            <div
+              class="col-md-3 col-12  me-4 d-flex flex-column justify-content-center bg-white rounded-4 p-5 p-md-0 mb-4 mb-md-0">
+              <h3 class="d-flex align-items-start fs-md-2 fs-4 fw-bold lh-sm text-primary position-relative mb-2 text-md-center ps-md-32">8 年
+                <picture class="d-flex align-items-start">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABlSURBVHgB7ZSxDYAwDAQ/EYOYDVJmBMTEjEDJBvEkCNGTvCVEgfRX2m9d8ZITCEstloH2tDuBedsPH91nfIwEEvxAkNZaWiBnnbmDMA2OIxgLqGTK3YEHctaZOwiJBfSuJZDgPRfByhDjb/J59wAAAABJRU5ErkJggg==" media="(min-width: 768px)" />
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABdSURBVHgB7ZLBCYAwDEVfioPUDXrsCOLEjuDRDZpJRPQk5QuFgqf+W34ePwnEEFpyigHK2zth3vbDazbQqREAtuZUPnqxql1BkwBpDHzUfcK9gdM2UXKmzPGJPwdc/esQ09+PVlAAAAAASUVORK5CYII=" alt="icon-plus" class="d-inline ms-2  ">
+                </picture>
+              </h3>
+
+              <p class="fs-md-7 fs-8 text-primary-80 lh-sm ps-md-32">旅遊企劃經驗</p>
+
+
+            </div>
+            <div
+              class="col-md-3 col-12  d-flex flex-column justify-content-center bg-white rounded-4 p-5 p-md-0 mb-5 mb-md-0 ">
+              <h3 class="d-flex align-items-start  fw-bold lh-sm text-primary position-relative mb-2 fs-md-2 fs-4 ps-md-32">
+                30,000
+                <picture class="d-flex align-items-start">
+                  <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABlSURBVHgB7ZSxDYAwDAQ/EYOYDVJmBMTEjEDJBvEkCNGTvCVEgfRX2m9d8ZITCEstloH2tDuBedsPH91nfIwEEvxAkNZaWiBnnbmDMA2OIxgLqGTK3YEHctaZOwiJBfSuJZDgPRfByhDjb/J59wAAAABJRU5ErkJggg==" media="(min-width: 768px)" />
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABdSURBVHgB7ZLBCYAwDEVfioPUDXrsCOLEjuDRDZpJRPQk5QuFgqf+W34ePwnEEFpyigHK2zth3vbDazbQqREAtuZUPnqxql1BkwBpDHzUfcK9gdM2UXKmzPGJPwdc/esQ09+PVlAAAAAASUVORK5CYII=" alt="icon-plus" class="d-inline ms-2  ">
+                </picture>
+              </h3>
+              <p class="fs-md-7 fs-8 text-primary-80 lh-sm ps-md-32">旅人五星好評</p>
+            </div>
+            <button
+              class="btn btn-dark d-flex d-md-none py-md-18 p-5  rounded-100 align-items-center justify-content-between">
+              <span class="me-4 fs-md-7 fs-9">立即探索我們的精心旅程</span>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFsSURBVHgBxZeNbYMwEIXPmYAR6ASlE7QjdAQ2ASYIG5gRukIncDeADcgG1zuwE0dCwj6b8ElPCPHzng/jHwWBIGJBh2/SJ6kilaTCXr6RJtIf6Zf0o5S6QQ7IuCRdSTPGoflZkMIttsapXG31ols9Yj5GDK0G3VhhXnM/RPXqlm+FKH1P5ZnzdzKw9u4jmUgf7i+5eBeaF5iD9WjcyVIBW5YRIum6bjk2TQMC3qgKE9gAGiMxxiA/ymrbFgX0zrxAIVrrlBA8sBUcoMYEEkPUovJnDKE5gMEMCEMYDhA7yeQMMcPeHe6FEoWEuMCBrPn3b8r2CYZhuLeeBqeQR+ZsnVBgziydcMBEhOaMTh6IEsyZ2g3Fon6QaM4UriP2GIk/GQnNNXsnTcf0nz8dI3lMx9IqJNA739OXZE/gCYvSrRDnLcsPrMSIsds0XMeHHB2T3xG3NduoRuxwPVvjcu/9CgLBx/b8i/QOmbbn/xzJsoscS2YSAAAAAElFTkSuQmCC" alt="right-arrow">
+            </button>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <footer class="footer bg-black ">
+  <div class="container py-md-100 py-80 d-flex flex-column flex-md-row justify-content-between">
+    <div>
+      <div class="d-flex  mb-32">
+        <img src="data:image/png;base64,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" alt="logo">
+        &nbsp;&nbsp;
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAmCAYAAAAiEnDvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE6SURBVHgBpZUBbcNADEV9QRAIgVAGOwiFMAhjsDFoGUxFsAZBrwg6BhmDhIHnUxMpbe++f9UvWYli60X+su9ECKlql0NekQF+9KqLxc4irvOBhAz26AqpZNELAegU69SIr42TPzCQ6OSTeJrNrOmSaxoH0Apu5+xCxPfjyEAiyP2FEBIDeQO5JIzMkxGYumUAG8Vql1rUTgS53vyYGAjy4yiM8tKBVjoGgJbudF9fawcNWc9CotSVhJHWl24o1TcFAFq6REEE+3FgIVHKmpaFYyC1ITtXvhchbaWWm9JF87C96/W+GekpdaDeCfe6wt0fsx85pvWq0zLAp96eZEP25RnADmztBwPw7tpRV0dhSXlOPOczYOtB4F9mYZOJdrhBs6I9AHwLKyv+0sfDee+ZmhUKsDi//rID9w/vZO//DGMfDwAAAABJRU5ErkJggg==" alt="!">
+      </div>
+      <ul class="list-unstyled d-flex flex-column flex-md-row gap-32 mb-40 mb-md-0">
+        <li><a class="text-white" href="#">常見問題</a></li>
+        <li><a class="text-white" href="#">關於我們</a></li>
+        <li><a class="text-white" href="#">隱私權政策</a></li>
+        <li><a class="text-white" href="#">使用者條款</a></li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-md-end align-items-start py-3 flex-column ">
+      <ul class="list-unstyled d-flex gap-4">
+        <li class="border p-3 rounded-full"><img class="footer-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADsSURBVHgBpVQBEYMwDOxNARKQgATmAAlMwTYFTAIS5mBMAXPQOSgOioNfci1r1hsHhb/7oy3p800TlIoAICNeiD3RIMD6tZqYqzl4gcZvWIPmn0hO1EiH/nGHbSIT+kmkxn7ULNSLhUKMSzinhX9yXEXs4PJZSlcHMlWKdI1R+kbPE3HwY0usiGcRVxzUOvANXaMPDGKesdArCjgSO34p1mMHLPIU8zfn6CbOajwtQj3JurJRXEg2A/uuX399wRWkQToM4naBu9J7gojGQs+xuxaubub6rlWpoE2P6Cil2gKEymeXmdoKLP1/PD6Mf7CURrUjgQAAAABJRU5ErkJggg=="
+            alt="icon-line"></li>
+        <li class="border p-3 rounded-full"><img class="footer-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC4SURBVHgBrZQBDcIwEEWvDQKKgzkAJ0gAFGABByABJKBgQcFwsDnYHBy/S4GupFwz7iVvXZbLz+2anKEAM+9wbKCDVfjsgilddA7wZoy5UBRW8/80785Yj6NF5pb0WNvMjOayKglcwj19LuI30lCiugqexXqx4LsBH9zk6i3NIz+m0g7x6uBJrIetUOODDrBnmXZBMj2VM/gZPkiPMfBOelzHJ+ssh9pnmVc0T9dX6uS3gp6OkvX1BFPQDtnv8TdfAAAAAElFTkSuQmCC"
+            alt="icon-youtube"></li>
+        <li class="border p-3 rounded-full"><img class="footer-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAYAAAAPFIbmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB0SURBVHgB1ZLBDYAgFEPRcJcRHMWRdAM30A1cwRHcQNzADWCDb71oJSH+K02aNOSlhQRjSCLi4AkO8mq25qsdbpOzxlJLlwAejvDBUz1NrFxVU3aUQw7Kqrq7f5hB03RqoPgkrI70uoUp1cWLhfirbJQ9QxfgVUQHDxlszgAAAABJRU5ErkJggg=="
+            alt="icon-fb"></li>
+      </ul>
+      <p class="fs-9 text-white">copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.</p>
+    </div>
+  </div>
+
+</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          const swiper = new Swiper(".mySwiper", {
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            slidesPerView: 1.09935,
+            spaceBetween: 16,
+            // (手機板排版設定),
+            breakpoints: {
+              768: {
+                slidesPerView: 2.09115,
+                spaceBetween: 24,
+              }
+              // (RWD設定部分)
+            }
+          });
+          const swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 1.25270,
+            spaceBetween: 16,
+            // (手機板排版設定),
+            breakpoints: {
+              768: {
+                slidesPerView: 5,
+                spaceBetween: 24,
+              }
+              // (RWD設定部分)
+            }
+          });
+          const swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 1.25270,
+            spaceBetween: 16,
+            // (手機板排版設定),
+            breakpoints: {
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+              }
+              // (RWD設定部分)
+            }
+          });
+        </script>
+  </body>
+
+</html>
