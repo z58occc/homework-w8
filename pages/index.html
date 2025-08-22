@@ -3,7 +3,7 @@
 
 <%- include('./layout/head') %>
 
-  <body>
+  <body >
     <%- include('./layout/nav.ejs') %>
 
       <section class="banner " style="background-image: url(../assets/images/index/unsplash_eOWabmCNEdg.png);">
@@ -37,11 +37,11 @@
               </p>
             </div>
           </div>
-          <div class="swiper mySwiper2 ">
+          <div class="swiper mySwiper2   ">
             <ul class="list-unstyled swiper-wrapper card-list  d-flex d-md-none gap-5 mb-40">
-              <li class="swiper-slide d-flex flex-column justify-content-end">
-                <h3 class="fw-bold fs-3 lh-sm mb-2">峇里島渡假漫遊</h3>
-                <p class="mb-0">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <li class="swiper-slide d-flex flex-column justify-content-end p-4">
+                <h3 class="fw-bold fs-md-3 fs-5 lh-sm mb-2">峇里島渡假漫遊</h3>
+                <p class="mb-0 fs-9 fs-md-8">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
                 <a href="#" class="d-flex justify-content-between align-items-center">
                   訂購行程
                   <span class="material-symbols-outlined">
@@ -49,9 +49,9 @@
                   </span>
                 </a>
               </li>
-              <li class=" swiper-slide d-flex flex-column justify-content-end">
-                <h3 class="fw-bold fs-3 lh-sm  mb-2">日本深度賞櫻計畫</h3>
-                <p class="mb-0">春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。</p>
+              <li class="swiper-slide d-flex flex-column justify-content-end p-4">
+                <h3 class="fw-bold fs-md-3 fs-5 lh-sm mb-2">峇里島渡假漫遊</h3>
+                <p class="mb-0 fs-9 fs-md-8">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
                 <a href="#" class="d-flex justify-content-between align-items-center">
                   訂購行程
                   <span class="material-symbols-outlined">
@@ -80,11 +80,8 @@
                 </a>
               </li>
             </ul>
-            <!-- If we need pagination -->
-            <div class="pagination">
-            </div>
           </div>
-          <ul class="card-list list-unstyled  gap-5 d-none d-md-flex">
+          <ul class="card-list-hover list-unstyled  gap-5 d-none d-md-flex">
             <li class=" d-flex flex-column justify-content-end">
               <h3 class="fw-bold fs-3 lh-sm mb-2">峇里島渡假漫遊</h3>
               <p class="mb-0">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
@@ -130,7 +127,7 @@
       </section>
 
       <section class="first-stop py-md-120 py-40 position-relative">
-        <img class="deco-bg d-none d-md-block position-absolute z-n1" src="../assets/images/index/Deco_bg.png"
+        <img class="deco-bg w-100 d-none d-md-block position-absolute z-n1" src="../assets/images/index/Deco_bg.png"
           alt="background-image">
         <img class="deco position-absolute d-none d-md-block" src="../assets/images/index/Deco.png" alt="ZOBAA">
         <div class="container d-flex flex-md-row flex-column-reverse">
@@ -185,9 +182,9 @@
       </section>
 
       <section class="mind-map">
-        <picture>
-          <source srcset="../assets/images/index/BG-up-section.png" media="(min-width: 768px)" />
-          <img src="../assets/images/index/index-mb/BG_Section-mb.png" alt="bg-up-deco">
+        <picture class="w-100">
+          <source srcset="../assets/images/index/BG-up-section.png" media="(min-width: 375px)" />
+          <img class="w-100" src="../assets/images/index/index-mb/BG_Section-mb.png" alt="bg-up-deco">
         </picture>
         <div class="py-md-120 py-40  bg-primary-10 ">
           <div class="container">
@@ -197,7 +194,7 @@
                 <h2 class="fs-md-1 fs-4 text-primary fw-bold mb-2">今年旅行的</h2>
                 <h2 class="fs-md-1 fs-4 text-primary fw-bold mb-5">靈感地圖</h2>
 
-                <ul class="list-unstyled d-flex gap-2 mb-5">
+                <ul class="list-unstyled d-flex gap-2 mb-5 text-nowrap overflow-auto">
                   <li>
                     <button class="tag tag-active  border-0">全部</button>
                   </li>
@@ -231,7 +228,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper mySwiper ps-3">
+          <div class="swiper mySwiper  ps-3 ">
             <div class="swiper-wrapper">
               <div class="swiper-slide ">
                 <div class="card mb-3 border-0 rounded-4 position-relative">
@@ -271,11 +268,11 @@
               </div>
               <div class="swiper-slide ">
                 <div class="card mb-3 border-0 rounded-4 position-relative">
-                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <span class="fs-md-200 fs-100 card-num position-absolute">2</span>
                   <div class="d-flex flex-column flex-md-row g-0">
                     <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
                       <picture>
-                        <source media="(min-width: 768px)" srcset="../assets/images/index/map-1.jpg">
+                        <source media="(min-width: 768px)" srcset="../assets/images/index/map-2.png">
                         <img src="../assets/images/index/index-mb/mind-map.png" class=" card-img rounded-4" alt="map-1">
                       </picture>
                     </div>
@@ -307,7 +304,7 @@
               </div>
               <div class="swiper-slide ">
                 <div class="card mb-3 border-0 rounded-4 position-relative">
-                  <span class="fs-md-200 fs-100 card-num position-absolute">1</span>
+                  <span class="fs-md-200 fs-100 card-num position-absolute">3</span>
                   <div class="d-flex flex-column flex-md-row g-0">
                     <div class=" p-md-4 ps-4 pe-4 pt-4 pb-2">
                       <picture>
@@ -421,22 +418,23 @@
           </div>
 
         </div>
-        <picture>
-          <source srcset="../assets/images/index/BG-bottom-Section.png" media="(min-width: 768px)" />
-          <img src="../assets/images/index/index-mb/BG_Section-mb-down.png" alt="bg-up-deco">
+        <picture class="w-100">
+          <source srcset="../assets/images/index/BG-bottom-Section.png" media="(min-width: 375px)" />
+          <img class="w-100" src="../assets/images/index/index-mb/BG_Section-mb-down.png" alt="bg-up-deco">
         </picture>
       </section>
 
       <section class="refer py-md-120 py-40">
         <div class="container position-relative">
-          <img class="deco-symbol z-n1 position-absolute" src="../assets/images/index/deco-symbol.png" alt="deco-#">
+          <picture class="deco-symbol z-n1 position-absolute">
+            <source srcset="../assets/images/index/deco-symbol.png" media="(min-width: 768px)" />
+            <img src="../assets/images/index/index-mb/deco-text-mb.png" alt="deco-#">
+          </picture>
           <h2 class="fs-md-1 fs-4 fw-bold lh-sm text-primary">搜尋墨爾本嗎？</h2>
           <h2 class="fs-md-1 fs-4 fw-bold lh-sm text-primary mb-md-80 mb-40">來點行程參考！</h2>
 
 
           <div class="swiper mySwiper3 ">
-
-
             <div class="swiper-wrapper position-relative">
               <button class="refer-button-left p-4 bg-white border-0 position-absolute rounded-4 shadow"><img
                   src="../assets/images/index/ic_ArrowLeft.png" alt="ic-arrow-left"></button>
@@ -558,25 +556,26 @@
       </section>
 
       <div class="marquee d-flex">
-        <p># ZOBAA # WHERETOGO # TODAY</p>
+        <p class="w-100"># ZOBAA # WHERETOGO # TODAY</p>
       </div>
 
       <section class="why py-md-120 py-40 bg-primary-40 position-relative">
         <img class="d-none d-md-block position-absolute top-0 start-0" src="../assets/images/index/deco-left-top.png"
           alt="one four circle">
-        <img class="d-none d-md-block deco-middle position-absolute " src="../assets/images/index/deco-bg-middle.png" alt="deco-middle">
-        <img class="d-none d-md-block deco-right-bottom position-absolute " src="../assets/images/index/deco-half-circle.png"
+        <img class="d-none d-md-block deco-middle w-100 position-absolute " src="../assets/images/index/deco-bg-middle.png"
           alt="deco-middle">
+        <img class="d-none d-md-block deco-right-bottom position-absolute "
+          src="../assets/images/index/deco-half-circle.png" alt="deco-middle">
 
 
         <div class="container">
           <div class="slogan mb-5 position-relative  z-0 d-none d-md-block"
             style="background-image: url(../assets/images/index/why-img.jpg);">
-            <h2 class="fs-150 lh-sm fw-bold text-white opacity-32"># ZOBAAAAA !</h2>
+            <h2 class="overflow-hidden fs-150 lh-sm fw-bold text-white opacity-32"># ZOBAAAAA !</h2>
             <h3 class="fs-1 lh-sm fw-bold text-white opacity-60">把旅行變成生活的養分。</h3>
           </div>
           <div>
-            <img src="../assets/images/index/index-mb/why-img-mb.png" alt="why-img-mb" class="d-md-none">
+            <img src="../assets/images/index/index-mb/why-img-mb.png" alt="why-img-mb" class="d-md-none w-100">
           </div>
 
           <div class="row bg-blur-8  p-32   rounded-4 position-relative z-0">
@@ -585,27 +584,40 @@
               <h2 class="fs-md-2 fs-6 fw-bold lh-sm text-primary mb-md-5 mb-4">為什麼選擇 ZOBAA ?</h2>
               <p class="mb-5 text-neutral-80 fs-9 fs-md-8">不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br>
                 ZOBAA 希望你能放心探索世界，把記憶留給旅程本身。</p>
-              <button class="btn btn-dark d-flex py-md-18 p-5  rounded-100 align-items-center">
+              <button class="btn btn-dark d-md-flex d-none py-md-18 p-5  rounded-100 align-items-center">
                 <span class="me-4 fs-md-7 fs-9">立即探索我們的精心旅程</span>
                 <img src="../assets/images/index/card-icon.png" alt="right-arrow">
               </button>
             </div>
-            <div class="col-md-3 col-12 ps-32 me-4 d-flex flex-column justify-content-center bg-white rounded-4 p-5 p-md-0 mb-4 mb-md-0">
-              <h3 class="d-flex align-items-start fs-md-2 fs-4 fw-bold lh-sm text-primary position-relative mb-2">8 年 <img
-                  src="../assets/images/index/+.png" alt="icon-plus" class="d-inline ms-2  "></h3>
+            <div
+              class="col-md-3 col-12  me-4 d-flex flex-column justify-content-center bg-white rounded-4 p-5 p-md-0 mb-4 mb-md-0">
+              <h3 class="d-flex align-items-start fs-md-2 fs-4 fw-bold lh-sm text-primary position-relative mb-2 text-md-center ps-md-32">8 年
+                <picture class="d-flex align-items-start">
+                  <source srcset="../assets/images/index/+.png" media="(min-width: 768px)" />
+                  <img src="../assets/images/index/index-mb/small-plus.png" alt="icon-plus" class="d-inline ms-2  ">
+                </picture>
+              </h3>
 
-              <p class="fs-md-7 fs-8 text-primary-80 lh-sm">旅遊企劃經驗</p>
-
-
-            </div>
-            <div class="col-md-3 col-12 ps-32 d-flex flex-column justify-content-center bg-white rounded-4 p-5 p-md-0">
-              <h3 class="d-flex align-items-start  fw-bold lh-sm text-primary position-relative mb-2 fs-md-2 fs-4">30,000<img
-                  src="../assets/images/index/+.png" alt="icon-plus" class="d-inline ms-2  "></h3>
-
-              <p class="fs-md-7 fs-8 text-primary-80 lh-sm">旅人五星好評</p>
+              <p class="fs-md-7 fs-8 text-primary-80 lh-sm ps-md-32">旅遊企劃經驗</p>
 
 
             </div>
+            <div
+              class="col-md-3 col-12  d-flex flex-column justify-content-center bg-white rounded-4 p-5 p-md-0 mb-5 mb-md-0 ">
+              <h3 class="d-flex align-items-start  fw-bold lh-sm text-primary position-relative mb-2 fs-md-2 fs-4 ps-md-32">
+                30,000
+                <picture class="d-flex align-items-start">
+                  <source srcset="../assets/images/index/+.png" media="(min-width: 768px)" />
+                  <img src="../assets/images/index/index-mb/small-plus.png" alt="icon-plus" class="d-inline ms-2  ">
+                </picture>
+              </h3>
+              <p class="fs-md-7 fs-8 text-primary-80 lh-sm ps-md-32">旅人五星好評</p>
+            </div>
+            <button
+              class="btn btn-dark d-flex d-md-none py-md-18 p-5  rounded-100 align-items-center justify-content-between">
+              <span class="me-4 fs-md-7 fs-9">立即探索我們的精心旅程</span>
+              <img src="../assets/images/index/card-icon.png" alt="right-arrow">
+            </button>
           </div>
 
 

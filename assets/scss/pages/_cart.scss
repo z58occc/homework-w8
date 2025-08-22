@@ -1,5 +1,5 @@
 .main{
-  width: 856px;
+  width: 66.04938%;
   .all-choose,input{
     width: 24px;
     height: 24px;
@@ -13,5 +13,13 @@
   }
 }
 .aside{
-  width: 416px;
+  width: 32.09876%;
+}
+@media (max-width:768px) {
+  .main{
+    width: 100%;
+  }
+  .aside{
+    width: 100%;
+  }
 }
